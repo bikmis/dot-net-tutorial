@@ -12,32 +12,32 @@ namespace MathService
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://MyWebService.org/", ConfigurationName="MathService.MathServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MathService.MathServiceSoap")]
     public interface MathServiceSoap
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Add", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
         int Add(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Add", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
         System.Threading.Tasks.Task<int> AddAsync(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Subtract", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Subtract", ReplyAction="*")]
         int Subtract(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Subtract", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Subtract", ReplyAction="*")]
         System.Threading.Tasks.Task<int> SubtractAsync(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Multiply", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Multiply", ReplyAction="*")]
         int Multiply(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Multiply", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Multiply", ReplyAction="*")]
         System.Threading.Tasks.Task<int> MultiplyAsync(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Divide", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Divide", ReplyAction="*")]
         int Divide(int a, int b);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://MyWebService.org/Divide", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Divide", ReplyAction="*")]
         System.Threading.Tasks.Task<int> DivideAsync(int a, int b);
     }
     
