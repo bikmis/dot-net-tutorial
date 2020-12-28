@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MathService;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
 using System;
@@ -20,6 +21,9 @@ namespace MyCoreApp.Controllers
 
         public IActionResult Index()
         {
+            MathServiceSoapClient mathService = new MathServiceSoapClient(MathServiceSoapClient.EndpointConfiguration.MathServiceSoap);
+            var sum = mathService.Add(1, 3);
+            ViewBag.Sum = sum;
             return View();
         }
 
