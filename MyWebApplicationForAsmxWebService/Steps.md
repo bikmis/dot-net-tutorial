@@ -33,3 +33,9 @@
             ViewBag.Sum = sum;
             return View();
         }            
+      
+      How to update the service reference in the client application:
+      1. If you made changes to the web (asmx) service and redployed it to IIS, then you need to update the service client in the MVC application. Right-click 
+         on MathService and click on Update Microsoft WCF Web Service Reference Provider...
+      
+      
