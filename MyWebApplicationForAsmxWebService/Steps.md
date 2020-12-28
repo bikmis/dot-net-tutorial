@@ -7,7 +7,7 @@
        <%@ WebService Language="C#" CodeBehind="MathService.asmx.cs" Class="MyWebApplicationForAsmxWebService.MathService" %>
        
     How to test a web (asmx) service:
-    1. You run the site by clicking F5, and type in https://localhost:44384/MathService.asmx in the browser to test web methods.
+    1. You run the site by clicking F5, and type in https://localhost:80/MathService.asmx in the browser to test web methods.
 
     How to publish / deploy a web (asmx) service to a folder:
     1. Build the project and right-click on the project to click on Publish...
@@ -19,4 +19,17 @@
     7. Type in http://localhost/MyAsmxService/MathService.asmx in the url of a browser to display all the web methods for you to test.
     
     How to consume a web (asmx) service:
-    1. 
+    1. Create a .net core MVC application.
+    2. Right-click on Connected Services and click on Add Connected Service
+    3. Click on Microsoft WCF Web Service Reference Provider.
+    4. Past "http://localhost/MyAsmxService/MathService.asmx" in the URI and hit Go.
+    5. Change Namespace to MathService and click Next and leave default values untouched and click Next and Check "Generate Synchronous Operations", then click on Finish.
+    6. At Connected Services, you have MathService. MathServiceSoapClient is the client class.
+    7. Go to HomeController.cs and in the Index method, write the following code:
+       public IActionResult Index()
+        {
+            MathServiceSoapClient mathService = new MathServiceSoapClient(MathServiceSoapClient.EndpointConfiguration.MathServiceSoap);
+            var sum = mathService.Add(1, 3);
+            ViewBag.Sum = sum;
+            return View();
+        }            
