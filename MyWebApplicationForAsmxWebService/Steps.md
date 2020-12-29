@@ -18,13 +18,13 @@
     6. Right-click on the application in IIS and click on Edit Permissions..., then choose Security and add "Authenticated Users" to Group or user names.
     7. Type in http://localhost/MyAsmxService/MathService.asmx in the url of a browser to display all the web methods for you to test.
     
-    How to consume a web (asmx) service:
+    How to consume a web (asmx) service (how to create a proxy class):
     1. Create a .net core MVC application.
     2. Right-click on Connected Services and click on Add Connected Service
     3. Click on Microsoft WCF Web Service Reference Provider.
     4. Paste "http://localhost/MyAsmxService/MathService.asmx" in the URI and hit Go.
     5. Change Namespace to MathService and click Next and leave default values untouched and click Next and Check "Generate Synchronous Operations", then click on Finish.
-    6. At Connected Services, you have MathService. MathServiceSoapClient is the client class.
+    6. At Connected Services, you have MathService. MathServiceSoapClient is the proxy client class.
     7. Go to HomeController.cs and in the Index method, write the following code:
        public IActionResult Index()
         {
