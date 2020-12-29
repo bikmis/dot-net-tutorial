@@ -61,6 +61,8 @@ namespace MyTest_With_Gherkin_Specflow_NUnit.Hooks
         {
             _scenarioContext.Remove("BeforeScenario");
             _scenarioContext.Remove("BeforeScenario1");
+            _testContext.WriteLine("Title: {0}",_scenarioContext.ScenarioInfo.Title);
+            _scenarioContext.ScenarioInfo.Tags.ToList().ForEach(tag => { _testContext.WriteLine("Tag: {0}",tag); });
         }
 
         [BeforeScenarioBlock]
