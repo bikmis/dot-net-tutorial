@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 
 
-public class TestService : ITest
+public class TestService : ITestService
 {
 
     public string SaySomething(string something)

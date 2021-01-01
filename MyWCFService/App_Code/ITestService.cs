@@ -6,7 +6,7 @@ using System.ServiceModel;
 
 
 [ServiceContract]
-public interface ITest
+public interface ITestService
 {
     [OperationContract]
     string SaySomething(string something);
