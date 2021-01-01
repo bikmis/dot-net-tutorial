@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyMVC_App_With_DotNet.NameServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,9 @@ namespace MyMVC_App_With_DotNet.Controllers
     {
         public ActionResult Index()
         {
+            NameServiceClient nameService = new NameServiceClient();
+            string name = nameService.GetName("Mike");
+            ViewBag.Name = name;
             return View();
         }
 
