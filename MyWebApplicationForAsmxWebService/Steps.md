@@ -12,8 +12,10 @@
     How to debug a web (asmx) service:
     1. Right-click on the project and click on Properties.
     2. Select Web and change Servers to Local IIS, and set Project Url to http://localhost/MyAsmxService.
+    3. Now the service is available at an IIS instance, which you can consume in your client.
+    4. Add a breakpoint in the asmx / web service project and run the client in the debug mode. This will hit the breakpoint.
 
-    How to publish / deploy a web (asmx) service to a folder:
+    How to publish / deploy a web (asmx) service to IIS:
     1. Build the project and right-click on the project to click on Publish...
     2. Choose Connection -> Publish method: File System and Target location: C:\inetpub\wwwroot\my_asmx_service
     3. Choose Configuration (Debug or Release). 
