@@ -23,7 +23,9 @@ namespace MyWcfServiceLibrary
                 return books;
             }
             else
+            {
                 return null;
+            }
         }
     }
 }
