@@ -16,7 +16,7 @@ public class Name : IName
 
 	public FullName GetFullName(string firstName, string lastName)
 	{
-		FullName fullName = new FullName() { FirstName = "Michael", LastName = "Jackson" };
+		FullName fullName = new FullName() { FirstName = firstName, LastName = lastName };
 		return fullName;
 	}
 }
