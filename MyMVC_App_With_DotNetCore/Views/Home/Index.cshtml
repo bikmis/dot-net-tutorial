@@ -13,4 +13,15 @@
     First Name: @ViewBag.FullName.FirstName
     <br />
     Last Name: @ViewBag.FullName.LastName
+    <br />
+    Shakespeare's books:
+    <br />
+    @foreach(var book in ViewBag.books) { 
+        <ul>
+            <li>
+                Title: @book.Title, Price: @book.Price
+            </li>
+        </ul>
+    }
+
 </div>

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using WriterServiceReference;
 
 namespace MyCoreApp.Controllers
 {
@@ -29,6 +30,10 @@ namespace MyCoreApp.Controllers
             NameServiceClient nameService = new NameServiceClient();
             FullName fullName = nameService.GetFullName("Michael", "Jackson");
             ViewBag.FullName = fullName;
+
+            WriterServiceClient writerService = new WriterServiceClient();
+            var books = writerService.GetBooks("Shakespeare");
+            ViewBag.books = books;
 
             return View();
         }
