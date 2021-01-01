@@ -9,6 +9,6 @@ public class Test : ITest
 
     public string SaySomething(string something)
     {
-        return something;
+        return string.Format("You said: {0}", something);
     }
 }

@@ -11,11 +11,12 @@ public class Name : IName
 {
 	public string GetName(string name)
 	{
-		return string.Format("Service Website: You entered: {0}", name);
+		return string.Format("You entered: {0}", name);
 	}
 
-	public FullName GetFullName(FullName fullName)
+	public FullName GetFullName(string firstName, string lastName)
 	{
+		FullName fullName = new FullName() { FirstName = "Michael", LastName = "Jackson" };
 		return fullName;
 	}
 }

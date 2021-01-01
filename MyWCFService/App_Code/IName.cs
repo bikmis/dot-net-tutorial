@@ -15,7 +15,7 @@ public interface IName
 	string GetName(string name);
 
 	[OperationContract]
-	FullName GetFullName(FullName fullName);
+	FullName GetFullName(string firstName, string lastName);
 
 }
 
@@ -24,7 +24,7 @@ public interface IName
 public class FullName
 {
 	[DataMember]
-	string FirstName { get; set; }
+	public string FirstName { get; set; }
 	[DataMember]
-	string LastName { get; set; }
+	public string LastName { get; set; }
 }
