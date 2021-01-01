@@ -1,4 +1,5 @@
 ﻿using MyMVC_App_With_DotNet.NameServiceReference;
+using MyMVC_App_With_DotNet.TestServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,11 @@ namespace MyMVC_App_With_DotNet.Controllers
             NameServiceClient nameService = new NameServiceClient();
             string name = nameService.GetName("Mike");
             ViewBag.Name = name;
+
+            TestServiceClient testService = new TestServiceClient();
+            var somethingSaid = testService.SaySomething("Hello There!");
+            ViewBag.SomethingSaid = somethingSaid;
+
             return View();
         }
 
