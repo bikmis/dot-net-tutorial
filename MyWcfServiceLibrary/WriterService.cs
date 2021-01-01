@@ -19,7 +19,7 @@ namespace MyWcfServiceLibrary
         {
             if (writer == "Shakespeare")
             {
-                List<Book> books = new List<Book>() { new Book() { Title = "Macbeth", Price = 2.35 } };
+                List<Book> books = new List<Book>() { new Book() { Title = "Macbeth", Price = 2.35 }, new Book() { Title = "Othello", Price = 3.25 } };
                 return books;
             }
             else

@@ -1,4 +1,6 @@
-﻿@{
+﻿
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -35,5 +37,16 @@
     <br />
     @ViewBag.SomethingSaid
     <br />
-    Ths sum of two numbers is @ViewBag.Sum
+    This sum of two numbers is @ViewBag.Sum
+    <br />
+
+    List of Shakespeare's Dramas: <br />
+    <ul>
+        @foreach (var book in ViewBag.Books)
+        {
+            <li>Title: @book.Title, Price: $@book.Price</li>
+        }
+    </ul>
+
+
 </div>

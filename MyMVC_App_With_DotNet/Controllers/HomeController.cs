@@ -1,6 +1,7 @@
 ﻿using MyMVC_App_With_DotNet.MathServiceReference;
 using MyMVC_App_With_DotNet.NameServiceReference;
 using MyMVC_App_With_DotNet.TestServiceReference;
+using MyMVC_App_With_DotNet.WriterServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,10 @@ namespace MyMVC_App_With_DotNet.Controllers
             MathServiceSoapClient mathService = new MathServiceSoapClient();
             var sum = mathService.Add(2, 3);
             ViewBag.Sum = sum;
+
+            WriterServiceClient writerService = new WriterServiceClient();
+            List<Book> books = writerService.GetBooks("Shakespeare").ToList();
+            ViewBag.Books = books;
 
             return View();
         }
