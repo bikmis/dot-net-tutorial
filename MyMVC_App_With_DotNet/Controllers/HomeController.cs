@@ -1,4 +1,5 @@
-﻿using MyMVC_App_With_DotNet.NameServiceReference;
+﻿using MyMVC_App_With_DotNet.MathServiceReference;
+using MyMVC_App_With_DotNet.NameServiceReference;
 using MyMVC_App_With_DotNet.TestServiceReference;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,10 @@ namespace MyMVC_App_With_DotNet.Controllers
             TestServiceClient testService = new TestServiceClient();
             var somethingSaid = testService.SaySomething("Hello There!");
             ViewBag.SomethingSaid = somethingSaid;
+
+            MathServiceSoapClient mathService = new MathServiceSoapClient();
+            var sum = mathService.Add(2, 3);
+            ViewBag.Sum = sum;
 
             return View();
         }
