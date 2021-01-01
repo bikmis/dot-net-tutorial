@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
+using NameServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,6 +25,11 @@ namespace MyCoreApp.Controllers
             MathServiceSoapClient mathService = new MathServiceSoapClient(MathServiceSoapClient.EndpointConfiguration.MathServiceSoap);
             var sum = mathService.Add(1, 3);
             ViewBag.Sum = sum;
+
+            NameServiceClient nameService = new NameServiceClient();
+            FullName fullName = nameService.GetFullName("Michael", "Jackson");
+            ViewBag.FullName = fullName;
+
             return View();
         }
 
