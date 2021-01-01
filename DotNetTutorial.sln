@@ -14,6 +14,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyWCFService", "MyWCFService\", "{E5BA9E7C-5635-49F8-B706-D643A2AF02FD}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{5a93f528-de6c-4708-87ad-a73b8a3b8066}|MyWcfServiceLibrary.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_51120"
 		Debug.AspNetCompiler.PhysicalPath = "MyWCFService\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51120\"

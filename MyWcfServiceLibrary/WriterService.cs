@@ -24,7 +24,8 @@ namespace MyWcfServiceLibrary
             }
             else
             {
-                return null;
+                var emptyBookList = new List<Book>() { };
+                return emptyBookList;
             }
         }
     }
