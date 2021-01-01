@@ -7,7 +7,9 @@ using System.ServiceModel.Web;
 using System.Text;
 
 // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service" in code, svc and config file together.
-public class Name : IName
+
+
+public class NameService : IName
 {
 	public string GetName(string name)
 	{
