@@ -1,7 +1,7 @@
     How to creat a web (asmx) service: 
     1. Add a project (ASP.NET Web Application (.NET Framework) to a solution
     2. Rigt-click on the project and add a new item (Web Service(ASMX))
-    3. Rename the service to MathService.asmx and add the following web methods: Add, Subtract etc.
+    3. Rename the service to MathService.asmx and add the following web methods: Add, Subtract etc. with [WebMethod] attribute.
     4. Right-click on the MathService.asmx and click on Open With... and select Web Service Editor (Default) to open MathService.asmx
        to view the CodeBehind and Class name: 
        <%@ WebService Language="C#" CodeBehind="MathService.asmx.cs" Class="MyWebApplicationForAsmxWebService.MathService" %>
@@ -11,7 +11,7 @@
 
     How to debug a web (asmx) service:
     1. Right-click on the project and click on Properties.
-    2. Select Web and change Servers to Local IIS, and set Project Url to http://localhost/MyAsmxService.
+    2. Select Web and change Servers to Local IIS, and set Project Url to http://localhost/MyWebApplicationForAsmxWebService.
     3. Now the service is available at an IIS instance, which you can consume in your client.
     4. Add a breakpoint in the asmx / web service project and run the client in the debug mode. This will hit the breakpoint.
 
@@ -24,13 +24,13 @@
     6. Right-click on the application in IIS and click on Edit Permissions..., then choose Security and add 
        "Authenticated Users" to Group or user names.
     7. Go to Content View of the application in IIS and right click on MathService.asmx and then click Browse to view all the services. 
-       Or type in http://localhost/MyAsmxService/MathService.asmx in the url of a browser to display all the web methods for you to test.
+       Or type in http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx in the url of a browser to display all the web methods for you to test.
     
     How to consume a web (asmx) service (how to create a proxy class):
     1. Create a .net core MVC application.
     2. Right-click on Connected Services and click on Add Connected Service
     3. Click on Microsoft WCF Web Service Reference Provider.
-    4. Paste "http://localhost/MyAsmxService/MathService.asmx" in the URI and hit Go.
+    4. Paste "http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx" in the URI and hit Go.
     5. Change Namespace to MathServiceReference and click Next and leave default values untouched and click Next and Check 
        "Generate Synchronous Operations", then click on Finish.
     6. At Connected Services, you have MathService. MathServiceSoapClient is the proxy client class.
