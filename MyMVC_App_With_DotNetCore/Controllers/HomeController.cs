@@ -1,4 +1,5 @@
-﻿using MathService;
+﻿using HelloServiceReference;
+using MathService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
@@ -34,6 +35,10 @@ namespace MyCoreApp.Controllers
             WriterServiceClient writerService = new WriterServiceClient();
             var books = writerService.GetBooks("Shakespeare");
             ViewBag.books = books;
+
+            HelloServiceClient helloService = new HelloServiceClient();
+            var helloMessage = helloService.SayHello();
+            ViewBag.HelloMessage = helloMessage;
 
             return View();
         }
