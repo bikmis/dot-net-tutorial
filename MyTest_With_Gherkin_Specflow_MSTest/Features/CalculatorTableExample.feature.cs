@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MyTest_With_Gherkin_Specflow_MSTest.Features
+namespace MyTestWithGherkinSpecflowMSTest.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -65,7 +65,7 @@ namespace MyTest_With_Gherkin_Specflow_MSTest.Features
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "Calculator_Table_Example")))
             {
-                global::MyTest_With_Gherkin_Specflow_MSTest.Features.Calculator_Table_ExampleFeature.FeatureSetup(null);
+                global::MyTestWithGherkinSpecflowMSTest.Features.Calculator_Table_ExampleFeature.FeatureSetup(null);
             }
         }
         

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace MyTest_With_Gherkin_Specflow_MSTest.Features
+namespace MyTestWithGherkinSpecflowMSTest.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -71,7 +71,7 @@ Link to a feature: [Calculator](MyTestProject/Features/Calculator.feature)
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "Calculator")))
             {
-                global::MyTest_With_Gherkin_Specflow_MSTest.Features.CalculatorFeature.FeatureSetup(null);
+                global::MyTestWithGherkinSpecflowMSTest.Features.CalculatorFeature.FeatureSetup(null);
             }
         }
         
