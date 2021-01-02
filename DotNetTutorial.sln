@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMVC_App_With_DotNetCore", "MyMVC_App_With_DotNetCore\MyMVC_App_With_DotNetCore.csproj", "{AB55C4C7-D4D1-4073-9FE5-D9FB45FCFA8A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTest_With_Gherkin_Specflow_MSTest", "MyTest_With_Gherkin_Specflow_MSTest\MyTest_With_Gherkin_Specflow_MSTest.csproj", "{40AD10FA-69E0-4EC1-81B1-3F0CEC1A6B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestWithGherkinSpecflowMSTest", "MyTest_With_Gherkin_Specflow_MSTest\MyTestWithGherkinSpecflowMSTest.csproj", "{40AD10FA-69E0-4EC1-81B1-3F0CEC1A6B66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceLibrary", "MyWcfServiceLibrary\MyWcfServiceLibrary.csproj", "{5A93F528-DE6C-4708-87AD-A73B8A3B8066}"
 EndProject
