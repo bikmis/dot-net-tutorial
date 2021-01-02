@@ -164,16 +164,16 @@
     <None Include="Connected Services\MathServiceReference\MathService.wsdl" />
     <None Include="Connected Services\NameServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\NameServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\HelloServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\HelloServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\HelloServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Connected Services\MathServiceReference\MathService.disco" />
     <None Include="Connected Services\MathServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\MathServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\MathServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\HelloServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\HelloServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\HelloServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

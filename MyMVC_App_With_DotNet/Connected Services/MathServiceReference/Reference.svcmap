@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3b4cca33-8905-4763-8bec-ed62995ed984" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="03d8fd81-3f8f-4785-b3da-a55930cd7901" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,11 +19,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/MyAsmxService/MathService.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="MathService.disco" MetadataType="Disco" ID="0c180303-7ef4-4ece-b911-f22197bf2c05" SourceId="1" SourceUrl="http://localhost/MyAsmxService/MathService.asmx?disco" />
-    <MetadataFile FileName="MathService.wsdl" MetadataType="Wsdl" ID="83485e98-9970-4d4d-a1e2-14e02566d1ad" SourceId="1" SourceUrl="http://localhost/MyAsmxService/MathService.asmx?wsdl" />
+    <MetadataFile FileName="MathService.disco" MetadataType="Disco" ID="0455b815-54e7-41b6-b5e1-0cc05e36b249" SourceId="1" SourceUrl="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx?disco" />
+    <MetadataFile FileName="MathService.wsdl" MetadataType="Wsdl" ID="48669855-16ec-4332-8fcc-23d8d1088ea7" SourceId="1" SourceUrl="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

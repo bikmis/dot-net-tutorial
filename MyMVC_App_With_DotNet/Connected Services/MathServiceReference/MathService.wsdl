@@ -186,10 +186,10 @@
   </wsdl:binding>
   <wsdl:service name="MathService">
     <wsdl:port name="MathServiceSoap" binding="tns:MathServiceSoap">
-      <soap:address location="http://localhost/MyAsmxService/MathService.asmx" />
+      <soap:address location="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx" />
     </wsdl:port>
     <wsdl:port name="MathServiceSoap12" binding="tns:MathServiceSoap12">
-      <soap12:address location="http://localhost/MyAsmxService/MathService.asmx" />
+      <soap12:address location="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

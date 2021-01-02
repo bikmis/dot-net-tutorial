@@ -3,14 +3,14 @@
   "Version": "15.0.40203.910",
   "ExtendedData": {
     "inputs": [
-      "http://localhost/MyAsmxService/MathService.asmx"
+      "http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx"
     ],
     "collectionTypes": [
       "System.Array",
       "System.Collections.Generic.Dictionary`2"
     ],
     "namespaceMappings": [
-      "*, MathService"
+      "*, MathServiceReference"
     ],
     "references": [
       "Castle.Core, {Castle.Core, 4.4.0}",
@@ -73,6 +73,12 @@
       "System.Security.Cryptography.Encoding, {System.Security.Cryptography.Encoding, 4.3.0}",
       "System.Security.Cryptography.Primitives, {System.Security.Cryptography.Primitives, 4.3.0}",
       "System.Security.Cryptography.X509Certificates, {System.Security.Cryptography.X509Certificates, 4.3.0}",
+      "System.ServiceModel, {System.ServiceModel.Primitives, 4.4.4}",
+      "System.ServiceModel.Duplex, {System.ServiceModel.Duplex, 4.4.4}",
+      "System.ServiceModel.Http, {System.ServiceModel.Http, 4.4.4}",
+      "System.ServiceModel.NetTcp, {System.ServiceModel.NetTcp, 4.4.4}",
+      "System.ServiceModel.Primitives, {System.ServiceModel.Primitives, 4.4.4}",
+      "System.ServiceModel.Security, {System.ServiceModel.Security, 4.4.4}",
       "System.Text.Encoding, {System.Text.Encoding, 4.3.0}",
       "System.Text.Encoding.Extensions, {System.Text.Encoding.Extensions, 4.3.0}",
       "System.Text.RegularExpressions, {System.Text.RegularExpressions, 4.3.0}",

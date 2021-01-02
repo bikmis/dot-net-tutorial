@@ -7,12 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MathService
+namespace MathServiceReference
 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MathService.MathServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MathServiceReference.MathServiceSoap")]
     public interface MathServiceSoap
     {
         
@@ -42,13 +42,13 @@ namespace MathService
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public interface MathServiceSoapChannel : MathService.MathServiceSoap, System.ServiceModel.IClientChannel
+    public interface MathServiceSoapChannel : MathServiceReference.MathServiceSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MathService.MathServiceSoap>, MathService.MathServiceSoap
+    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MathServiceReference.MathServiceSoap>, MathServiceReference.MathServiceSoap
     {
         
         /// <summary>
@@ -165,11 +165,11 @@ namespace MathService
         {
             if ((endpointConfiguration == EndpointConfiguration.MathServiceSoap))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyAsmxService/MathService.asmx");
+                return new System.ServiceModel.EndpointAddress("http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx");
             }
             if ((endpointConfiguration == EndpointConfiguration.MathServiceSoap12))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyAsmxService/MathService.asmx");
+                return new System.ServiceModel.EndpointAddress("http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

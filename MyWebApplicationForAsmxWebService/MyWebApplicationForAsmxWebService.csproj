@@ -101,7 +101,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50828</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/MyAsmxService</IISUrl>
+          <IISUrl>http://localhost/MyWebApplicationForAsmxWebService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

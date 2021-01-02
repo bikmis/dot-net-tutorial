@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="uEwzoIA4sny/jqDVa6vdBEEKwwB0zvXaYbHGyIEE0rM=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="/7Ng3cxWztDdtoBFqk+yek1ReyEAec4gzDps0fSXbKY=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="MathServiceSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="MathServiceSoap" contract="MathServiceReference.MathServiceSoap" bindingType="basicHttpBinding" address="http://localhost/MyAsmxService/MathService.asmx" bindingConfiguration="MathServiceSoap">
+    <endpoint name="MathServiceSoap" contract="MathServiceReference.MathServiceSoap" bindingType="basicHttpBinding" address="http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx" bindingConfiguration="MathServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost/MyAsmxService/MathService.asmx</serializedValue>
+          <serializedValue>http://localhost/MyWebApplicationForAsmxWebService/MathService.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

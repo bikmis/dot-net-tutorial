@@ -48,6 +48,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceApplication", "MyWcfServiceApplication\MyWcfServiceApplication.csproj", "{277D6799-7BB9-46A5-BD05-C4C6942E1909}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web Service", "Web Service", "{8E862D65-B783-4F39-AF02-A7AF87E3A88A}"
+	ProjectSection(SolutionItems) = preProject
+		MyWebApplicationForAsmxWebService\Steps.md = MyWebApplicationForAsmxWebService\Steps.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

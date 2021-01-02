@@ -1,5 +1,5 @@
 ﻿using HelloServiceReference;
-using MathService;
+using MathServiceReference;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
