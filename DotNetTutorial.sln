@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMVCAppWithDotNetCore", "MyMVC_App_With_DotNetCore\MyMVCAppWithDotNetCore.csproj", "{AB55C4C7-D4D1-4073-9FE5-D9FB45FCFA8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMVCAppWithDotNetCore", "MyMVCAppWithDotNetCore\MyMVCAppWithDotNetCore.csproj", "{AB55C4C7-D4D1-4073-9FE5-D9FB45FCFA8A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestWithGherkinSpecflowMSTest", "MyTestWithGherkinSpecflowMSTest\MyTestWithGherkinSpecflowMSTest.csproj", "{40AD10FA-69E0-4EC1-81B1-3F0CEC1A6B66}"
 EndProject
