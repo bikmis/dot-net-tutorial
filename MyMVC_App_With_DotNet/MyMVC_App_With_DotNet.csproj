@@ -122,6 +122,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\HelloServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\MathServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -149,6 +154,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\HelloServiceReference\HelloService.wsdl" />
+    <None Include="Connected Services\HelloServiceReference\HelloService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\HelloServiceReference\HelloService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\MathServiceReference\MathService.wsdl" />
     <None Include="Connected Services\NameServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\NameServiceReference\configuration.svcinfo" />
@@ -156,6 +168,12 @@
     <None Include="Connected Services\MathServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\MathServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\MathServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\HelloServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\HelloServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\HelloServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -259,6 +277,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\HelloServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\MathServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\NameServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\TestServiceReference\" />

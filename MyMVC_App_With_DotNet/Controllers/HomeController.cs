@@ -1,4 +1,5 @@
-﻿using MyMVC_App_With_DotNet.MathServiceReference;
+﻿using MyMVC_App_With_DotNet.HelloServiceReference;
+using MyMVC_App_With_DotNet.MathServiceReference;
 using MyMVC_App_With_DotNet.NameServiceReference;
 using MyMVC_App_With_DotNet.TestServiceReference;
 using MyMVC_App_With_DotNet.WriterServiceReference;
@@ -29,6 +30,10 @@ namespace MyMVC_App_With_DotNet.Controllers
             WriterServiceClient writerService = new WriterServiceClient();
             List<Book> books = writerService.GetBooks("Shakespeare").ToList();
             ViewBag.Books = books;
+
+            HelloServiceClient helloService = new HelloServiceClient();
+            var helloMessage = helloService.SayHello();
+            ViewBag.HelloMessage = helloMessage;
 
             return View();
         }
