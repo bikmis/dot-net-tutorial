@@ -43,7 +43,7 @@ namespace TestServiceReference
         public TestServiceClient() : 
                 base(TestServiceClient.GetDefaultBinding(), TestServiceClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_ITestService.ToString();
+            this.Endpoint.Name = EndpointConfiguration.TestService.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
@@ -95,7 +95,7 @@ namespace TestServiceReference
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_ITestService))
+            if ((endpointConfiguration == EndpointConfiguration.TestService))
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
                 result.MaxBufferSize = int.MaxValue;
@@ -109,27 +109,27 @@ namespace TestServiceReference
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_ITestService))
+            if ((endpointConfiguration == EndpointConfiguration.TestService))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyWcfServices/Test.svc/TestService");
+                return new System.ServiceModel.EndpointAddress("http://localhost/MyWCFService/Test.svc/TestService");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
         
         private static System.ServiceModel.Channels.Binding GetDefaultBinding()
         {
-            return TestServiceClient.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_ITestService);
+            return TestServiceClient.GetBindingForEndpoint(EndpointConfiguration.TestService);
         }
         
         private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
         {
-            return TestServiceClient.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_ITestService);
+            return TestServiceClient.GetEndpointAddress(EndpointConfiguration.TestService);
         }
         
         public enum EndpointConfiguration
         {
             
-            BasicHttpBinding_ITestService,
+            TestService,
         }
     }
 }

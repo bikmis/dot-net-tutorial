@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/MyWcfServices/WriterService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/MyWcfService/WriterService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WriterService.wsdl" MetadataType="Wsdl" ID="ee42852b-09f4-4806-a710-325cc1515bd7" SourceId="1" SourceUrl="http://localhost/MyWcfServices/WriterService.svc?wsdl" />
-    <MetadataFile FileName="WriterService.xsd" MetadataType="Schema" ID="32c69d7b-f914-47ad-b50a-f9354dfbe58e" SourceId="1" SourceUrl="http://localhost/MyWcfServices/WriterService.svc?xsd=xsd2" />
-    <MetadataFile FileName="WriterService1.xsd" MetadataType="Schema" ID="1dadf608-1d57-4be2-9c34-3b0f6067cbba" SourceId="1" SourceUrl="http://localhost/MyWcfServices/WriterService.svc?xsd=xsd0" />
-    <MetadataFile FileName="WriterService2.xsd" MetadataType="Schema" ID="f3c288ef-5af4-4ad7-a2b5-46de64c540e8" SourceId="1" SourceUrl="http://localhost/MyWcfServices/WriterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WriterService1.wsdl" MetadataType="Wsdl" ID="74bac3e1-da67-43e0-8457-2a5a33e63bc1" SourceId="1" SourceUrl="http://localhost/MyWcfService/WriterService.svc?wsdl" />
+    <MetadataFile FileName="WriterService3.xsd" MetadataType="Schema" ID="c07eff69-b83a-4816-b5e1-4049bfd58841" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WriterService31.xsd" MetadataType="Schema" ID="40604823-939a-4786-8833-ab6afbe30f11" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WriterService32.xsd" MetadataType="Schema" ID="9dad5947-49f8-4dd0-a8b8-3a82cbc819d7" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

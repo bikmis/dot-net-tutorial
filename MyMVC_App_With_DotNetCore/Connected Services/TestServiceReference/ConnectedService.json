@@ -3,7 +3,7 @@
   "Version": "15.0.40203.910",
   "ExtendedData": {
     "inputs": [
-      "http://localhost/MyWcfServices/Test.svc?wsdl"
+      "http://localhost/MyWcfService/Test.svc?wsdl"
     ],
     "collectionTypes": [
       "System.Array",

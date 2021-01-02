@@ -165,7 +165,7 @@ namespace WriterServiceReference
         {
             if ((endpointConfiguration == EndpointConfiguration.WriterService))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyWcfServices/WriterService.svc/WriterService");
+                return new System.ServiceModel.EndpointAddress("http://localhost/MyWCFService/WriterService.svc/WriterService");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }

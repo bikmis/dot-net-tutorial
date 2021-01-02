@@ -87,7 +87,7 @@ namespace NameServiceReference
         public NameServiceClient() : 
                 base(NameServiceClient.GetDefaultBinding(), NameServiceClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.BasicHttpBinding_INameService.ToString();
+            this.Endpoint.Name = EndpointConfiguration.NameService.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
@@ -149,7 +149,7 @@ namespace NameServiceReference
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_INameService))
+            if ((endpointConfiguration == EndpointConfiguration.NameService))
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
                 result.MaxBufferSize = int.MaxValue;
@@ -163,27 +163,27 @@ namespace NameServiceReference
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.BasicHttpBinding_INameService))
+            if ((endpointConfiguration == EndpointConfiguration.NameService))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyWcfServices/Name.svc/NameService");
+                return new System.ServiceModel.EndpointAddress("http://localhost/MyWCFService/Name.svc/NameService");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
         
         private static System.ServiceModel.Channels.Binding GetDefaultBinding()
         {
-            return NameServiceClient.GetBindingForEndpoint(EndpointConfiguration.BasicHttpBinding_INameService);
+            return NameServiceClient.GetBindingForEndpoint(EndpointConfiguration.NameService);
         }
         
         private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
         {
-            return NameServiceClient.GetEndpointAddress(EndpointConfiguration.BasicHttpBinding_INameService);
+            return NameServiceClient.GetEndpointAddress(EndpointConfiguration.NameService);
         }
         
         public enum EndpointConfiguration
         {
             
-            BasicHttpBinding_INameService,
+            NameService,
         }
     }
 }

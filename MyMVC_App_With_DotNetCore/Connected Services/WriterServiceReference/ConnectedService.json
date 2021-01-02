@@ -6,7 +6,7 @@
   },
   "ExtendedData": {
     "inputs": [
-      "http://localhost/MyWcfServices/WriterService.svc?wsdl"
+      "http://localhost/MyWcfService/WriterService.svc?wsdl"
     ],
     "collectionTypes": [
       "System.Array",

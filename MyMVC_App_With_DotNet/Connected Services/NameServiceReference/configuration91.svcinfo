@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="csKIg/QH9SmN5VeMjJnaSh8avRoKZMW3wfaKcQZU9rw=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="jeiOlrNflZ5fbISaK+0mj5i3g0SmhP1Ubrp38IX/2tY=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="NameService">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="NameService" contract="NameServiceReference.INameService" bindingType="basicHttpBinding" address="http://localhost/MyWcfServices/Name.svc/NameService" bindingConfiguration="NameService">
+    <endpoint name="NameService" contract="NameServiceReference.INameService" bindingType="basicHttpBinding" address="http://localhost/MyWCFService/Name.svc/NameService" bindingConfiguration="NameService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost/MyWcfServices/Name.svc/NameService</serializedValue>
+          <serializedValue>http://localhost/MyWCFService/Name.svc/NameService</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
