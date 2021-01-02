@@ -8,6 +8,7 @@
        
     How to test a web (asmx) service:
     1. You run the site by clicking F5, and type in https://localhost:80/MathService.asmx in the browser to test web methods.
+    2. Or you can select the file MathService.asmx and right-click and click on "View in Browser (Google Chrome)".
 
     How to debug a web (asmx) service:
     1. Right-click on the project and click on Properties.
