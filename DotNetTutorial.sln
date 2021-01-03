@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestWithGherkinSpecflowMS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceLibrary", "WCF Service\MyWcfServiceLibrary\MyWcfServiceLibrary.csproj", "{5A93F528-DE6C-4708-87AD-A73B8A3B8066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationForAsmxWebService", "MyWebApplicationForAsmxWebService\MyWebApplicationForAsmxWebService.csproj", "{6164D79D-6931-42D0-BEA0-A51F1204792D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationForAsmxWebService", "Web Service\MyWebApplicationForAsmxWebService\MyWebApplicationForAsmxWebService.csproj", "{6164D79D-6931-42D0-BEA0-A51F1204792D}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyWCFService", "WCF Service\MyWCFService\", "{E5BA9E7C-5635-49F8-B706-D643A2AF02FD}"
 	ProjectSection(WebsiteProperties) = preProject
