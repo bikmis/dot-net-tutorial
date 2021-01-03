@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVC_App_With_DotNet.NameServiceReference {
+namespace MyMVCAppWithDotNet.NameServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -85,19 +85,19 @@ namespace MyMVC_App_With_DotNet.NameServiceReference {
         System.Threading.Tasks.Task<string> GetNameAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INameService/GetFullName", ReplyAction="http://tempuri.org/INameService/GetFullNameResponse")]
-        MyMVC_App_With_DotNet.NameServiceReference.FullName GetFullName(string firstName, string lastName);
+        MyMVCAppWithDotNet.NameServiceReference.FullName GetFullName(string firstName, string lastName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INameService/GetFullName", ReplyAction="http://tempuri.org/INameService/GetFullNameResponse")]
-        System.Threading.Tasks.Task<MyMVC_App_With_DotNet.NameServiceReference.FullName> GetFullNameAsync(string firstName, string lastName);
+        System.Threading.Tasks.Task<MyMVCAppWithDotNet.NameServiceReference.FullName> GetFullNameAsync(string firstName, string lastName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface INameServiceChannel : MyMVC_App_With_DotNet.NameServiceReference.INameService, System.ServiceModel.IClientChannel {
+    public interface INameServiceChannel : MyMVCAppWithDotNet.NameServiceReference.INameService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class NameServiceClient : System.ServiceModel.ClientBase<MyMVC_App_With_DotNet.NameServiceReference.INameService>, MyMVC_App_With_DotNet.NameServiceReference.INameService {
+    public partial class NameServiceClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.NameServiceReference.INameService>, MyMVCAppWithDotNet.NameServiceReference.INameService {
         
         public NameServiceClient() {
         }
@@ -126,11 +126,11 @@ namespace MyMVC_App_With_DotNet.NameServiceReference {
             return base.Channel.GetNameAsync(name);
         }
         
-        public MyMVC_App_With_DotNet.NameServiceReference.FullName GetFullName(string firstName, string lastName) {
+        public MyMVCAppWithDotNet.NameServiceReference.FullName GetFullName(string firstName, string lastName) {
             return base.Channel.GetFullName(firstName, lastName);
         }
         
-        public System.Threading.Tasks.Task<MyMVC_App_With_DotNet.NameServiceReference.FullName> GetFullNameAsync(string firstName, string lastName) {
+        public System.Threading.Tasks.Task<MyMVCAppWithDotNet.NameServiceReference.FullName> GetFullNameAsync(string firstName, string lastName) {
             return base.Channel.GetFullNameAsync(firstName, lastName);
         }
     }

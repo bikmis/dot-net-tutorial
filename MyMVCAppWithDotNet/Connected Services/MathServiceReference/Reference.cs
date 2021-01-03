@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVC_App_With_DotNet.MathServiceReference {
+namespace MyMVCAppWithDotNet.MathServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -41,12 +41,12 @@ namespace MyMVC_App_With_DotNet.MathServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface MathServiceSoapChannel : MyMVC_App_With_DotNet.MathServiceReference.MathServiceSoap, System.ServiceModel.IClientChannel {
+    public interface MathServiceSoapChannel : MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MyMVC_App_With_DotNet.MathServiceReference.MathServiceSoap>, MyMVC_App_With_DotNet.MathServiceReference.MathServiceSoap {
+    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap>, MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap {
         
         public MathServiceSoapClient() {
         }

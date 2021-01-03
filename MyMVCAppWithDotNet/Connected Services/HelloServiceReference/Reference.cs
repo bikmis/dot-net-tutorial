@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVC_App_With_DotNet.HelloServiceReference {
+namespace MyMVCAppWithDotNet.HelloServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -23,12 +23,12 @@ namespace MyMVC_App_With_DotNet.HelloServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IHelloServiceChannel : MyMVC_App_With_DotNet.HelloServiceReference.IHelloService, System.ServiceModel.IClientChannel {
+    public interface IHelloServiceChannel : MyMVCAppWithDotNet.HelloServiceReference.IHelloService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class HelloServiceClient : System.ServiceModel.ClientBase<MyMVC_App_With_DotNet.HelloServiceReference.IHelloService>, MyMVC_App_With_DotNet.HelloServiceReference.IHelloService {
+    public partial class HelloServiceClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.HelloServiceReference.IHelloService>, MyMVCAppWithDotNet.HelloServiceReference.IHelloService {
         
         public HelloServiceClient() {
         }

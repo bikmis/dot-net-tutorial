@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVC_App_With_DotNet.TestServiceReference {
+namespace MyMVCAppWithDotNet.TestServiceReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -23,12 +23,12 @@ namespace MyMVC_App_With_DotNet.TestServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ITestServiceChannel : MyMVC_App_With_DotNet.TestServiceReference.ITestService, System.ServiceModel.IClientChannel {
+    public interface ITestServiceChannel : MyMVCAppWithDotNet.TestServiceReference.ITestService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class TestServiceClient : System.ServiceModel.ClientBase<MyMVC_App_With_DotNet.TestServiceReference.ITestService>, MyMVC_App_With_DotNet.TestServiceReference.ITestService {
+    public partial class TestServiceClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.TestServiceReference.ITestService>, MyMVCAppWithDotNet.TestServiceReference.ITestService {
         
         public TestServiceClient() {
         }

@@ -1,8 +1,8 @@
-﻿using MyMVC_App_With_DotNet.HelloServiceReference;
-using MyMVC_App_With_DotNet.MathServiceReference;
-using MyMVC_App_With_DotNet.NameServiceReference;
-using MyMVC_App_With_DotNet.TestServiceReference;
-using MyMVC_App_With_DotNet.WriterServiceReference;
+﻿using MyMVCAppWithDotNet.HelloServiceReference;
+using MyMVCAppWithDotNet.MathServiceReference;
+using MyMVCAppWithDotNet.NameServiceReference;
+using MyMVCAppWithDotNet.TestServiceReference;
+using MyMVCAppWithDotNet.WriterServiceReference;
 using System;
 using System.Collections.Generic;
 using System.Linq;

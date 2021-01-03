@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyMVC_App_With_DotNet</RootNamespace>
-    <AssemblyName>MyMVC_App_With_DotNet</AssemblyName>
+    <RootNamespace>MyMVCAppWithDotNet</RootNamespace>
+    <AssemblyName>MyMVCAppWithDotNet</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
@@ -177,7 +177,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="Connected Services\NameServiceReference\MyMVC_App_With_DotNet.NameServiceReference.FullName.datasource">
+    <Content Include="Connected Services\NameServiceReference\MyMVCAppWithDotNet.NameServiceReference.FullName.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\NameServiceReference\Name3.xsd">
@@ -209,7 +209,7 @@
     <None Include="Connected Services\TestServiceReference\TestService.wsdl" />
     <None Include="Connected Services\WriterServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\WriterServiceReference\configuration.svcinfo" />
-    <Content Include="Connected Services\WriterServiceReference\MyMVC_App_With_DotNet.WriterServiceReference.Book.datasource">
+    <Content Include="Connected Services\WriterServiceReference\MyMVCAppWithDotNet.WriterServiceReference.Book.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\WriterServiceReference\Reference.svcmap">

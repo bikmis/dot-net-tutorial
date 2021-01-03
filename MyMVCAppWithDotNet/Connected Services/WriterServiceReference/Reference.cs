@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVC_App_With_DotNet.WriterServiceReference {
+namespace MyMVCAppWithDotNet.WriterServiceReference {
     using System.Runtime.Serialization;
     using System;
     
@@ -85,19 +85,19 @@ namespace MyMVC_App_With_DotNet.WriterServiceReference {
         System.Threading.Tasks.Task<string> GetWriterAsync(string name);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWriterService/GetBooks", ReplyAction="http://tempuri.org/IWriterService/GetBooksResponse")]
-        MyMVC_App_With_DotNet.WriterServiceReference.Book[] GetBooks(string writer);
+        MyMVCAppWithDotNet.WriterServiceReference.Book[] GetBooks(string writer);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWriterService/GetBooks", ReplyAction="http://tempuri.org/IWriterService/GetBooksResponse")]
-        System.Threading.Tasks.Task<MyMVC_App_With_DotNet.WriterServiceReference.Book[]> GetBooksAsync(string writer);
+        System.Threading.Tasks.Task<MyMVCAppWithDotNet.WriterServiceReference.Book[]> GetBooksAsync(string writer);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IWriterServiceChannel : MyMVC_App_With_DotNet.WriterServiceReference.IWriterService, System.ServiceModel.IClientChannel {
+    public interface IWriterServiceChannel : MyMVCAppWithDotNet.WriterServiceReference.IWriterService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class WriterServiceClient : System.ServiceModel.ClientBase<MyMVC_App_With_DotNet.WriterServiceReference.IWriterService>, MyMVC_App_With_DotNet.WriterServiceReference.IWriterService {
+    public partial class WriterServiceClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.WriterServiceReference.IWriterService>, MyMVCAppWithDotNet.WriterServiceReference.IWriterService {
         
         public WriterServiceClient() {
         }
@@ -126,11 +126,11 @@ namespace MyMVC_App_With_DotNet.WriterServiceReference {
             return base.Channel.GetWriterAsync(name);
         }
         
-        public MyMVC_App_With_DotNet.WriterServiceReference.Book[] GetBooks(string writer) {
+        public MyMVCAppWithDotNet.WriterServiceReference.Book[] GetBooks(string writer) {
             return base.Channel.GetBooks(writer);
         }
         
-        public System.Threading.Tasks.Task<MyMVC_App_With_DotNet.WriterServiceReference.Book[]> GetBooksAsync(string writer) {
+        public System.Threading.Tasks.Task<MyMVCAppWithDotNet.WriterServiceReference.Book[]> GetBooksAsync(string writer) {
             return base.Channel.GetBooksAsync(writer);
         }
     }
