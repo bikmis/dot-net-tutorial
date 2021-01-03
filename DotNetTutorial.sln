@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationWithWebForm
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remoting Service", "Remoting Service", "{AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC}"
 	ProjectSection(SolutionItems) = preProject
-		HowToRemotingService.md = HowToRemotingService.md
+		Remoting Service\HowToRemotingService.md = Remoting Service\HowToRemotingService.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF Service", "WCF Service", "{941010D8-0FE8-4B68-991E-A891FD45BB52}"
