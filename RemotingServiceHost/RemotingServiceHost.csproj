@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="HowToRemotingService.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GreetingRemotingService\GreetingRemotingService.csproj">
