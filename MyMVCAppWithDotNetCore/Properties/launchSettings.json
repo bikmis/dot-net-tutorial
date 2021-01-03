@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iis": {
-      "applicationUrl": "http://localhost/MyMVC_App_With_DotNetCore",
+      "applicationUrl": "http://localhost/MyMVCAppWithDotNetCore",
       "sslPort": 0
     },
     "iisExpress": {
