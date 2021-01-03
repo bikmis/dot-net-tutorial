@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMVCAppWithDotNetCore", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestWithGherkinSpecflowMSTest", "Tests\MyTestWithGherkinSpecflowMSTest\MyTestWithGherkinSpecflowMSTest.csproj", "{40AD10FA-69E0-4EC1-81B1-3F0CEC1A6B66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceLibrary", "MyWcfServiceLibrary\MyWcfServiceLibrary.csproj", "{5A93F528-DE6C-4708-87AD-A73B8A3B8066}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceLibrary", "WCF Service\MyWcfServiceLibrary\MyWcfServiceLibrary.csproj", "{5A93F528-DE6C-4708-87AD-A73B8A3B8066}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationForAsmxWebService", "MyWebApplicationForAsmxWebService\MyWebApplicationForAsmxWebService.csproj", "{6164D79D-6931-42D0-BEA0-A51F1204792D}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyWCFService", "MyWCFService\", "{E5BA9E7C-5635-49F8-B706-D643A2AF02FD}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MyWCFService", "WCF Service\MyWCFService\", "{E5BA9E7C-5635-49F8-B706-D643A2AF02FD}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
 		ProjectReferences = "{5a93f528-de6c-4708-87ad-a73b8a3b8066}|MyWcfServiceLibrary.dll;"
@@ -45,7 +45,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{79554B53
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web Service", "Web Service", "{4BF83AB3-543F-4D56-A623-4DA1F9AA6770}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceApplication", "MyWcfServiceApplication\MyWcfServiceApplication.csproj", "{277D6799-7BB9-46A5-BD05-C4C6942E1909}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWcfServiceApplication", "WCF Service\MyWcfServiceApplication\MyWcfServiceApplication.csproj", "{277D6799-7BB9-46A5-BD05-C4C6942E1909}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationWithWebForms", "MyWebApplicationWithWebForms\MyWebApplicationWithWebForms.csproj", "{5A38ACF1-18CD-4639-8961-1D807DBBB1F8}"
 EndProject
