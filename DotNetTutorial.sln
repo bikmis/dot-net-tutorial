@@ -50,8 +50,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationWithWebForms", "MyWebApplicationWithWebForms\MyWebApplicationWithWebForms.csproj", "{5A38ACF1-18CD-4639-8961-1D807DBBB1F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Remoting Service", "Remoting Service", "{AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC}"
+	ProjectSection(SolutionItems) = preProject
+		HowToRemotingService.md = HowToRemotingService.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF Service", "WCF Service", "{941010D8-0FE8-4B68-991E-A891FD45BB52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGreetingRemotingService", "IGreetingRemotingService\IGreetingRemotingService.csproj", "{36906DE1-301E-4678-B960-14962AD816DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingRemotingService", "GreetingRemotingService\GreetingRemotingService.csproj", "{E60D8724-1F68-4BDB-9CD4-4455B007B7A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingServiceHost", "RemotingServiceHost\RemotingServiceHost.csproj", "{97B63D51-6E97-4496-BE57-8BF473EA64D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows Application", "Windows Application", "{900CA8A3-996B-40CC-9600-37F873F837EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsFormsApp", "MyWindowsFormsApp\MyWindowsFormsApp.csproj", "{5D3AC032-4E92-4EC8-9119-CB81A9182A10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +104,22 @@ Global
 		{5A38ACF1-18CD-4639-8961-1D807DBBB1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A38ACF1-18CD-4639-8961-1D807DBBB1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A38ACF1-18CD-4639-8961-1D807DBBB1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36906DE1-301E-4678-B960-14962AD816DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36906DE1-301E-4678-B960-14962AD816DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36906DE1-301E-4678-B960-14962AD816DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36906DE1-301E-4678-B960-14962AD816DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60D8724-1F68-4BDB-9CD4-4455B007B7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60D8724-1F68-4BDB-9CD4-4455B007B7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60D8724-1F68-4BDB-9CD4-4455B007B7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60D8724-1F68-4BDB-9CD4-4455B007B7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B63D51-6E97-4496-BE57-8BF473EA64D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B63D51-6E97-4496-BE57-8BF473EA64D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B63D51-6E97-4496-BE57-8BF473EA64D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B63D51-6E97-4496-BE57-8BF473EA64D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3AC032-4E92-4EC8-9119-CB81A9182A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3AC032-4E92-4EC8-9119-CB81A9182A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3AC032-4E92-4EC8-9119-CB81A9182A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3AC032-4E92-4EC8-9119-CB81A9182A10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +135,10 @@ Global
 		{5A38ACF1-18CD-4639-8961-1D807DBBB1F8} = {4EF53425-C122-4D96-9C2A-B9402A67C651}
 		{AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC} = {4BF83AB3-543F-4D56-A623-4DA1F9AA6770}
 		{941010D8-0FE8-4B68-991E-A891FD45BB52} = {4BF83AB3-543F-4D56-A623-4DA1F9AA6770}
+		{36906DE1-301E-4678-B960-14962AD816DE} = {AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC}
+		{E60D8724-1F68-4BDB-9CD4-4455B007B7A3} = {AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC}
+		{97B63D51-6E97-4496-BE57-8BF473EA64D2} = {AE0D897A-CFDC-4C09-BEEF-C0E65B8ABDBC}
+		{5D3AC032-4E92-4EC8-9119-CB81A9182A10} = {900CA8A3-996B-40CC-9600-37F873F837EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60AC1184-1314-47F6-A4CA-0390809156BF}
