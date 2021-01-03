@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGreetingRemotingService", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingServiceHost", "RemotingServiceHost\RemotingServiceHost.csproj", "{97B63D51-6E97-4496-BE57-8BF473EA64D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsFormsApp", "MyWindowsFormsApp\MyWindowsFormsApp.csproj", "{5D3AC032-4E92-4EC8-9119-CB81A9182A10}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWindowsFormsClientApp", "MyWindowsFormsApp\MyWindowsFormsClientApp.csproj", "{5D3AC032-4E92-4EC8-9119-CB81A9182A10}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTestWithGherkinSpecflowMSTest", "MyTestWithGherkinSpecflowMSTest\MyTestWithGherkinSpecflowMSTest.csproj", "{91F5E7CD-59D9-4F0D-ADC8-3747BAE9FF23}"
 EndProject
