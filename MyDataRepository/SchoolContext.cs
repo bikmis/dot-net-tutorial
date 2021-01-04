@@ -1,10 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MyRepositoryAndUOW.Models;
+﻿using MyDataRepository.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Text;
 
-namespace MyRepositoryAndUOW
+namespace MyDataRepository
 {
     public class SchoolContext : DbContext
     {

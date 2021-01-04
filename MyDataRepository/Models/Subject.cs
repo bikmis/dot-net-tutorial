@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyRepositoryAndUOW.Models
+namespace MyDataRepository.Models
 {
     public class Subject
     {
