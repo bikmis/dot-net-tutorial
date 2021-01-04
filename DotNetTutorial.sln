@@ -56,9 +56,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationWithWebForm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationForAsmxWebService", "MyWebApplicationForAsmxWebService\MyWebApplicationForAsmxWebService.csproj", "{6164D79D-6931-42D0-BEA0-A51F1204792D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{D5FBCD24-A37C-4148-A45E-B76A3D779A95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{D5FBCD24-A37C-4148-A45E-B76A3D779A95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRepositoryAndUOW", "MyRepositoryAndUOW\MyRepositoryAndUOW.csproj", "{3088E21C-4919-48A6-8EE6-3A2A60ED38F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyRepositoryAndUOW", "MyRepositoryAndUOW\MyRepositoryAndUOW.csproj", "{3088E21C-4919-48A6-8EE6-3A2A60ED38F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
