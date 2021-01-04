@@ -6,11 +6,12 @@ namespace MyRepositoryAndUOW.Models
 {
     public class Address
     {
-        public int ID { get; set; }
-        public string HouseNumber { get; set; }
-        public string Street { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string ZipCode { get; set; }
+        public int AddressId { get; set; }   //scalar property
+        public string HouseNumber { get; set; }  //scalar property
+        public string Street { get; set; }  //scalar property
+        public string City { get; set; }   //scalar property
+        public string State { get; set; }  //scalar property
+        public string ZipCode { get; set; }  //scalar property
+     //   public ICollection<Student> Students { get; set; }  //collection navigation property (multiplicity of many)
     }
 }
