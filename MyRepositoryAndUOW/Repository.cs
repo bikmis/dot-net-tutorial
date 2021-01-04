@@ -50,7 +50,7 @@ namespace MyRepositoryAndUOW
 
         IEnumerable<TEntity> IRepository<TEntity>.GetAll()
         {
-            return _dbSet;
+            return _dbSet.ToList();
         }
 
         void IRepository<TEntity>.Insert(TEntity entity)
