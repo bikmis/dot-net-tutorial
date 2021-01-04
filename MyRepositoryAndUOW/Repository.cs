@@ -43,7 +43,7 @@ namespace MyRepositoryAndUOW
             }
         }
 
-        TEntity IRepository<TEntity>.GetById(object id)
+        TEntity IRepository<TEntity>.GetById(int id)
         {
             return _dbSet.Find(id);
         }
@@ -64,7 +64,7 @@ namespace MyRepositoryAndUOW
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        void IRepository<TEntity>.Delete(object id)
+        void IRepository<TEntity>.Delete(int id)
         {
             var entityToDelete = _dbSet.Find(id);
             if (entityToDelete != null && _context.Entry(entityToDelete).State == EntityState.Detached)
