@@ -11,5 +11,8 @@ Security in Sql server for IIS application:
 1. In sql server add "IIS APPPOOL\MyMVCAppWithDotNetAppPool" to Security/Users (right-click on Users of the database in question, 
    click on New User... and Set User type to Windows user and put "IIS APPPOOL\MyMVCAppWithDotNetAppPool" in User name field. In Membership, 
    check db_owner).
-2. In sql server add "IIS APPPOOL\MyMVCAppWithDotNetAppPool" to Security/Logins (right-click on Logins and click New Login... and put "IIS APPPOOL\MyMVCAppWithDotNetAppPool" in Login name field and click OK.)
+2. In sql server add "IIS APPPOOL\MyMVCAppWithDotNetAppPool" to Security/Logins (right-click on Logins and click New Login... and 
+   put "IIS APPPOOL\MyMVCAppWithDotNetAppPool" in Login name field and click OK.)
+
+
 
