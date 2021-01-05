@@ -78,6 +78,10 @@
     <Compile Include="Migrations\202101051202085_icollection.designer.cs">
       <DependentUpon>202101051202085_icollection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101051205482_subject_courses.cs" />
+    <Compile Include="Migrations\202101051205482_subject_courses.designer.cs">
+      <DependentUpon>202101051205482_subject_courses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
@@ -111,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101051202085_icollection.resx">
       <DependentUpon>202101051202085_icollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101051205482_subject_courses.resx">
+      <DependentUpon>202101051205482_subject_courses.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
