@@ -74,6 +74,10 @@
     <Compile Include="Migrations\202101051131250_id.designer.cs">
       <DependentUpon>202101051131250_id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101051202085_icollection.cs" />
+    <Compile Include="Migrations\202101051202085_icollection.designer.cs">
+      <DependentUpon>202101051202085_icollection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
@@ -104,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101051131250_id.resx">
       <DependentUpon>202101051131250_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101051202085_icollection.resx">
+      <DependentUpon>202101051202085_icollection.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
