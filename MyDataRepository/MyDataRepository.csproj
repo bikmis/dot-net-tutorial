@@ -70,6 +70,10 @@
     <Compile Include="Migrations\202101050334500_course_name.designer.cs">
       <DependentUpon>202101050334500_course_name.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101051131250_id.cs" />
+    <Compile Include="Migrations\202101051131250_id.designer.cs">
+      <DependentUpon>202101051131250_id.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101050334500_course_name.resx">
       <DependentUpon>202101050334500_course_name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101051131250_id.resx">
+      <DependentUpon>202101051131250_id.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,7 @@ namespace MyDataRepository.Entities
 {
     public class Student
     {
-        public int StudentId { get; set; }  //scalar property
+        public int Id { get; set; }  //scalar property
         public string FirstName { get; set; }   //scalar property
         public string MiddleName { get; set; }
         public string LastName { get; set; }   //scalar property

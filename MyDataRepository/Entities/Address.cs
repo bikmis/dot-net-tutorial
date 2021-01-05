@@ -6,7 +6,7 @@ namespace MyDataRepository.Entities
 {
     public class Address
     {
-        public int AddressId { get; set; }   //scalar property
+        public int Id { get; set; }   //scalar property
         public string HouseNumber { get; set; }  //scalar property
         public string Street { get; set; }  //scalar property
         public string City { get; set; }   //scalar property
