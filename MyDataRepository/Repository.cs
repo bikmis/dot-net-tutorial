@@ -12,10 +12,10 @@ namespace MyDataRepository
         internal SchoolContext _context;
         internal DbSet<TEntity> _dbSet;
 
-        public Repository(SchoolContext context, DbSet<TEntity> dbSet)
+        public Repository(SchoolContext context)
         {
             _context = context;
-            _dbSet = dbSet;
+            _dbSet = context.Set<TEntity>();
         }
 
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
