@@ -60,6 +60,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataRepository", "MyDataRepository\MyDataRepository.csproj", "{E300D49D-71B7-4718-8303-F72A7543D984}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyHelp", "MyHelp", "{F8550688-6594-4A99-A68E-1D3298E271BC}"
+	ProjectSection(SolutionItems) = preProject
+		MyHelp\Angular.md = MyHelp\Angular.md
+		MyHelp\IIS.md = MyHelp\IIS.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
