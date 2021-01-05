@@ -62,6 +62,10 @@
     <Compile Include="Migrations\202101050045263_icollection_to_list.designer.cs">
       <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101050311241_middlename.cs" />
+    <Compile Include="Migrations\202101050311241_middlename.designer.cs">
+      <DependentUpon>202101050311241_middlename.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101050045263_icollection_to_list.resx">
       <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101050311241_middlename.resx">
+      <DependentUpon>202101050311241_middlename.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
