@@ -7,7 +7,7 @@ namespace MyDataRepository.Entities
     public class Course
     {
         public int CourseId { get; set; }
-       
+        public string Name { get; set; }      
         public double Tuition { get; set; } 
         public double DurationInYears { get; set; }
         public string SchoolName { get; set; }

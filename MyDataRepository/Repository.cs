@@ -9,15 +9,15 @@ namespace MyDataRepository
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        internal SchoolContext _context;
-        internal DbSet<TEntity> _dbSet;
+        private SchoolContext _context;
+        private DbSet<TEntity> _dbSet;
 
         public Repository(SchoolContext context)
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
         }
-
+        
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
         {
             IQueryable<TEntity> query = _dbSet;
@@ -42,29 +42,29 @@ namespace MyDataRepository
                 return query.ToList();
             }
         }
-
-        TEntity IRepository<TEntity>.GetById(int id)
+        
+        public TEntity GetById(int id)
         {
             return _dbSet.Find(id);
         }
-
-        IEnumerable<TEntity> IRepository<TEntity>.GetAll()
+        
+        public IEnumerable<TEntity> GetAll()
         {
             return _dbSet.ToList();
         }
 
-        void IRepository<TEntity>.Insert(TEntity entity)
+        public void Insert(TEntity entity)
         {
             _dbSet.Add(entity);
         }
 
-        void IRepository<TEntity>.Update(TEntity entity)
+        public void Update(TEntity entity)
         {
             _dbSet.Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        void IRepository<TEntity>.Delete(int id)
+        public void Delete(int id)
         {
             var entityToDelete = _dbSet.Find(id);
             if (entityToDelete != null && _context.Entry(entityToDelete).State == EntityState.Detached)

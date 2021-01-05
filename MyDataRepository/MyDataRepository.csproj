@@ -66,6 +66,10 @@
     <Compile Include="Migrations\202101050311241_middlename.designer.cs">
       <DependentUpon>202101050311241_middlename.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101050334500_course_name.cs" />
+    <Compile Include="Migrations\202101050334500_course_name.designer.cs">
+      <DependentUpon>202101050334500_course_name.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
@@ -90,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101050311241_middlename.resx">
       <DependentUpon>202101050311241_middlename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101050334500_course_name.resx">
+      <DependentUpon>202101050334500_course_name.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
