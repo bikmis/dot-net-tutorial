@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRepository.cs" />
+    <Compile Include="Migrations\202101050026388_mega_mig.cs" />
+    <Compile Include="Migrations\202101050026388_mega_mig.designer.cs">
+      <DependentUpon>202101050026388_mega_mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101050045263_icollection_to_list.cs" />
+    <Compile Include="Migrations\202101050045263_icollection_to_list.designer.cs">
+      <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Student.cs" />
@@ -64,6 +74,14 @@
     <None Include="App.config" />
     <None Include="HowToEntityFramework.md" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202101050026388_mega_mig.resx">
+      <DependentUpon>202101050026388_mega_mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101050045263_icollection_to_list.resx">
+      <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

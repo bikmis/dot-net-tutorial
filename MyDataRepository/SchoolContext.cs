@@ -8,8 +8,13 @@ namespace MyDataRepository
 {
     public class SchoolContext : DbContext
     {
+        //  static string conStr = System.Configuration.ConfigurationManager.AppSettings["SchoolDbConStr"];
+
+        static string connectionString = "Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=SSPI;";
+
+
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
-        public SchoolContext() 
+        public SchoolContext(): base(connectionString)
         {
             
         }
@@ -17,6 +22,7 @@ namespace MyDataRepository
         public DbSet<Student> Students { get; set; }  // an entity is a class that maps to a database table.
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
 
     }
 }
