@@ -243,6 +243,7 @@
     <None Include="Connected Services\WriterServiceReference\WriterService32.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="HowToMVC.md" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

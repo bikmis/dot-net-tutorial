@@ -44,6 +44,7 @@ namespace MyMVC_App_With_DotNet.Controllers
             ViewBag.HelloMessage = helloMessage;
 
             var students = unitOfWork.StudentRepository.GetAll().ToList();
+            ViewBag.Students = students;
 
             return View();
         }

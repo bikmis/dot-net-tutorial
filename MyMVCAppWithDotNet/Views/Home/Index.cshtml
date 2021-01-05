@@ -49,6 +49,13 @@
     </ul>
     <br />
     @ViewBag.HelloMessage (message from Hello Service)
-
+    <br />
+    List of Students: <br />
+    <ul>
+        @foreach (var student in ViewBag.Students)
+        {
+            <li>FirstName: @student.FirstName, LastName: @student.LastName, HouseNumber: @student.Address.HouseNumber, Course: @student.Course.Name</li>
+        }
+    </ul>
 
 </div>
