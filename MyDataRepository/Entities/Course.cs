@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyDataRepository.Models
+namespace MyDataRepository.Entities
 {
     public class Course
     {
