@@ -8,6 +8,7 @@ namespace MyDataRepository.Entities
     {
         public int StudentId { get; set; }  //scalar property
         public string FirstName { get; set; }   //scalar property
+        public string MiddleName { get; set; }
         public string LastName { get; set; }   //scalar property
         public string Gender { get; set; }   //scalar property
         public DateTime? DOB { get; set; }   //scalar property
