@@ -296,6 +296,12 @@
     <WCFMetadataStorage Include="Connected Services\TestServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WriterServiceReference\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyDataRepository\MyDataRepository.csproj">
+      <Project>{e300d49d-71b7-4718-8303-f72a7543d984}</Project>
+      <Name>MyDataRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

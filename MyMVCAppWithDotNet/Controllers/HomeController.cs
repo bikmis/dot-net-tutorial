@@ -1,4 +1,5 @@
-﻿using MyMVCAppWithDotNet.HelloServiceReference;
+﻿using MyDataRepository;
+using MyMVCAppWithDotNet.HelloServiceReference;
 using MyMVCAppWithDotNet.MathServiceReference;
 using MyMVCAppWithDotNet.NameServiceReference;
 using MyMVCAppWithDotNet.TestServiceReference;
@@ -13,6 +14,13 @@ namespace MyMVC_App_With_DotNet.Controllers
 {
     public class HomeController : Controller
     {
+
+        private IUnitOfWork unitOfWork = new UnitOfWork();
+
+        public HomeController() { 
+            
+        }
+
         public ActionResult Index()
         {
             NameServiceClient nameService = new NameServiceClient();
@@ -34,6 +42,8 @@ namespace MyMVC_App_With_DotNet.Controllers
             HelloServiceClient helloService = new HelloServiceClient();
             var helloMessage = helloService.SayHello();
             ViewBag.HelloMessage = helloMessage;
+
+            var students = unitOfWork.StudentRepository.GetAll().ToList();
 
             return View();
         }
