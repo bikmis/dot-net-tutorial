@@ -69,4 +69,8 @@
       <app-child (voteEvent)="onVoted($event)"></app-child>
 
 22. Transferring values between components using Subject and subscribing to it in another component.     
- 
+
+23. NgModules are eagerly loaded, which means as soon as the app loads, so do all the NgModules, whether
+    or not they are immediately necessary. For large apps with lots of routes, consider lazy loading - a design
+    pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn
+    helps decrease load times. loadChildren with import used in a route to enable lazy-loading of a module.
