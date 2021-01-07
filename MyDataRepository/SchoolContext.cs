@@ -6,12 +6,12 @@ using System.Text;
 
 namespace MyDataRepository
 {
-    public class SchoolContext : DbContext
+    internal class SchoolContext : DbContext
     {
         static string connectionString = "Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;";
 
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
-        public SchoolContext(): base(connectionString)
+        internal SchoolContext(): base(connectionString)
         {
             
         }

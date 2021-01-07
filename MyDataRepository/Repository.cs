@@ -12,7 +12,7 @@ namespace MyDataRepository
         private SchoolContext _context;
         private DbSet<TEntity> _dbSet;
 
-        public Repository(SchoolContext context)
+        internal Repository(SchoolContext context)
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
