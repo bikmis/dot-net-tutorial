@@ -1,6 +1,6 @@
 using System;
 
-namespace MyAngularWebApp
+namespace MyAngularWebApplication
 {
     public class WeatherForecast
     {
