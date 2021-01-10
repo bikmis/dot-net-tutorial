@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace MyAngularWebApplication
+namespace MyWebApplicationWithAngular
 {
     public class Startup
     {
@@ -67,7 +67,8 @@ namespace MyAngularWebApplication
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "start");
+                    // spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");  // run npm start from the terminal, add web.config for url rewrite in client app and in index.html set href to the application name in iis
                 }
             });
         }
