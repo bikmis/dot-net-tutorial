@@ -1,0 +1,8 @@
+JavaScript
+
+- Closure
+
+- Pure Function
+
+
+
