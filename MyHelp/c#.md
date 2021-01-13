@@ -1,20 +1,27 @@
 C#
 
 1. Difference between value types and reference types
+Value type is created directly in memory. Each instance keeps a copy of data.
+int a = 5;
+int b = a; (value 5 is passed)
 
-2. Difference between constant and readonly
+Reference type shares a single piece of data. It points to a memory address on stack
+which points to a value on heap.
+var a = new student();
+var b = a; (var a and var b both point to the same reference that points to the same object) 
 
-3. Difference between interface and abstract class
+2. Difference between interface and abstract class
 
-4. Is multiple inheritance allowed in C#?
+3. Is multiple inheritance allowed in C#?
+No
 
-5. Where is virtual used?
+4. Where is virtual used?
 
-6. What is generic?
+5. What is generic?
 
-7. What is a sealed class?
+6. What is a sealed class?
 
-8. What is boxing and unboxing?
+7. What is boxing and unboxing?
 
-9. What is polymorphism?
+8. What is polymorphism?
 
