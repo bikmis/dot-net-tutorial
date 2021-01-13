@@ -70,6 +70,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyHelp", "MyHelp", "{F85506
 		MyHelp\IIS.md = MyHelp\IIS.md
 		MyHelp\MongoDB.md = MyHelp\MongoDB.md
 		MyHelp\SQL Server.md = MyHelp\SQL Server.md
+		MyHelp\WCF.md = MyHelp\WCF.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebApplicationWithAngular", "MyWebApplicationWithAngular\MyWebApplicationWithAngular.csproj", "{9C1F1689-8A4B-4A28-AC93-178FE3F46DCE}"
