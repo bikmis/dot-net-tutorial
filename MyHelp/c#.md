@@ -11,17 +11,26 @@ C#
 	var b = a; (var a and var b both point to the same reference that points to the same object) 
 
 - Difference between interface and abstract class
+	An interface has a declaration only, but an abstract class can have both declarations and definition/concretion.
+	A class can implement multiple interfaces, but inherit from only one class.
+	An interface can only contain methods, but an abstract class can contain methods, fields, constants etc.
 
 - Is multiple inheritance allowed in C#?
 	No
 
 - Where is virtual used?
+	A virtual method or property is created in a base class which can be overridden in a derived class.
 
 - What is generic?
+	A general form, not specific to a particular data type. Generic classes are defined a type parameter
+	in angle brackets after the class name.
 
 - What is a sealed class?
+	A sealed class cannot be derived from.
 
 - What is boxing and unboxing?
+	Boxing is the process of converting a value type to the type object. Unboxing extracts the value
+	from the object or converts an object into a value type.
 
 - What is polymorphism?
 
