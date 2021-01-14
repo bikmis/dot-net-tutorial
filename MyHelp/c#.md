@@ -1,5 +1,12 @@
 C#
 
+- Four principles of OOPS are:
+	Abstraction: Creating an abstract class / base class putting all the common methods and properties.
+	Encapsulation: Putting data members and methods in one class.
+	Inheritance: Deriving properties from another class
+	Polymorphism: one name many forms. Many forms of a single object. e.g. a mobile phone functions as a phone,
+				  a camera, mp3 player, radio
+
 - Difference between value types and reference types
 	Value type is created directly in memory. Each instance keeps a copy of data.
 	int a = 5;
