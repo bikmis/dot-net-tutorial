@@ -11,14 +11,14 @@ namespace MyDataRepository
     {
         /* This library is built using .net framework and so .net core mvc cannot use it.
            add a reference to System.Configuration to use ConfigurationManager,
-           SchoolDb should be a ConfigurationString in web.config of the calling project as follows:
+           SchoolDb should be a ConfigurationString in web.config or app.config of the calling project as follows:
            <connectionStrings>
                 <add name="SchoolDb"
                      connectionString="Data Source=localhost; Initial Catalog=SchoolDb; Integrated Security=True;"
                      providerName="System.Data.SqlClient" />
            </connectionStrings>
          */
-        static string connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString(); //"Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;";
+        static string connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString();
 
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
         internal SchoolContext(): base(connectionString)
