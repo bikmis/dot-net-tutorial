@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Text;
+using System.Configuration;
 
 namespace MyDataRepository
 {
     internal class SchoolContext : DbContext
     {
-        static string connectionString = "Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;";
+        static string connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString(); //"Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;";
 
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
         internal SchoolContext(): base(connectionString)
