@@ -16,7 +16,8 @@
     <br />
     Shakespeare's books:
     <br />
-    @foreach(var book in ViewBag.books) { 
+    @foreach (var book in ViewBag.books)
+    {
         <ul>
             <li>
                 Title: @book.Title, Price: @book.Price
@@ -25,4 +26,7 @@
     }
     <br />
     @ViewBag.HelloMessage (message from Hello Service)
+    <br />
+    @*   @ViewBag.Student*@
+
 </div>
