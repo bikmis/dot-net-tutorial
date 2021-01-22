@@ -3,7 +3,7 @@ using MathServiceReference;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
-//using MyDataRepository;
+using MyDataRepository;
 using NameServiceReference;
 using System;
 using System.Collections.Generic;
@@ -16,12 +16,12 @@ namespace MyCoreApp.Controllers
 {
     public class HomeController : Controller
     {
-      //  private readonly IUnitOfWork _db;
+        private readonly IUnitOfWork _db;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger/*, IUnitOfWork db*/)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork db)
         {
-           // _db = db;
+            _db = db;
             _logger = logger;
         }
 
@@ -43,7 +43,7 @@ namespace MyCoreApp.Controllers
             var helloMessage = helloService.SayHello();
             ViewBag.HelloMessage = helloMessage;
 
-            //   ViewBag.Student = _db.StudentRepository.GetAll().FirstOrDefault().FirstName;
+            ViewBag.Student = _db.StudentRepository.GetAll().FirstOrDefault().FirstName;
             return View();
         }
 
