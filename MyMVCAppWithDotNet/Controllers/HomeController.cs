@@ -4,23 +4,22 @@ using MyMVCAppWithDotNet.MathServiceReference;
 using MyMVCAppWithDotNet.NameServiceReference;
 using MyMVCAppWithDotNet.TestServiceReference;
 using MyMVCAppWithDotNet.WriterServiceReference;
-using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MyMVC_App_With_DotNet.Controllers
 {
     public class HomeController : Controller
     {
-        static string connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString();
-        private IUnitOfWork unitOfWork = new UnitOfWork(connectionString);
+        private readonly string connectionString;
+        private readonly IUnitOfWork unitOfWork;
 
-        public HomeController() { 
-            
-        }
+        public HomeController() {
+            connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString();
+            unitOfWork = new UnitOfWork(connectionString);
+    }
 
         public ActionResult Index()
         {
