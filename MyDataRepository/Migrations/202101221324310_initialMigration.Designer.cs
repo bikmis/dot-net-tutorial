@@ -13,7 +13,7 @@ namespace MyDataRepository.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202101221200207_initialMigration"; }
+            get { return "202101221324310_initialMigration"; }
         }
         
         string IMigrationMetadata.Source
