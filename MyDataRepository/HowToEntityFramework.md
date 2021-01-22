@@ -14,7 +14,6 @@
 					integrated in Visual Studio and then generate entities, the context class, and the database script from your visual model.
 					You do this on the design surface of the EDMX file. Right-click on the project (class library .net framework) and add new item
 					and select ADO.NET Entity Data Model template.
-
  
 - Migrations: (a) Go to Tools -> NuGet Package Manager -> Package Manager Console (b) PM>enable-migrations -> it will create Migrations folder 
 	   with Configuratin.cs file (c)PM>add-migration "name" -> this will add a new migration file to Migrations folder. (d) PM>update-database -> this will fire migration code in the database.
