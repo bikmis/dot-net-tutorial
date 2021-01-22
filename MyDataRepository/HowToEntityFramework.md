@@ -22,9 +22,14 @@
 - SchoolDb should be added to ConfigurationStrings element in the web.config of the mvc client project and the app.config of this project.
 - Set this project as the Startup Project for running update-database using the configuraion string in the app.config of this project.
 - Set the calling MVC project as the startup Project to run using the client's configuration string.
-- The following is the configuration string to be added to the app.config and web.config files.
+- The following is the configuration string to be added to the app.config and web.config files of mvc or api created wtih .net framework.
       <connectionStrings>
          <add name="SchoolDb"
               connectionString="Data Source=localhost; Initial Catalog=SchoolDb; Integrated Security=True;"
               providerName="System.Data.SqlClient" />
       </connectionStrings>
+- The following is the configuration string in appsettings.json for mvc with .net core
+  "ConnectionStrings": {
+    "SchoolDb": "Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;"
+  }
+
