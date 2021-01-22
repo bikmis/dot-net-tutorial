@@ -54,39 +54,15 @@
   <ItemGroup>
     <Compile Include="IRepository.cs" />
     <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="Migrations\202101050026388_mega_mig.cs" />
-    <Compile Include="Migrations\202101050026388_mega_mig.designer.cs">
-      <DependentUpon>202101050026388_mega_mig.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101050045263_icollection_to_list.cs" />
-    <Compile Include="Migrations\202101050045263_icollection_to_list.designer.cs">
-      <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101050311241_middlename.cs" />
-    <Compile Include="Migrations\202101050311241_middlename.designer.cs">
-      <DependentUpon>202101050311241_middlename.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101050334500_course_name.cs" />
-    <Compile Include="Migrations\202101050334500_course_name.designer.cs">
-      <DependentUpon>202101050334500_course_name.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101051131250_id.cs" />
-    <Compile Include="Migrations\202101051131250_id.designer.cs">
-      <DependentUpon>202101051131250_id.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101051202085_icollection.cs" />
-    <Compile Include="Migrations\202101051202085_icollection.designer.cs">
-      <DependentUpon>202101051202085_icollection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101051205482_subject_courses.cs" />
-    <Compile Include="Migrations\202101051205482_subject_courses.designer.cs">
-      <DependentUpon>202101051205482_subject_courses.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\Student.cs" />
     <Compile Include="Entities\Subject.cs" />
+    <Compile Include="Migrations\202101221200207_initialMigration.cs" />
+    <Compile Include="Migrations\202101221200207_initialMigration.designer.cs">
+      <DependentUpon>202101221200207_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="SchoolContext.cs" />
@@ -98,26 +74,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202101050026388_mega_mig.resx">
-      <DependentUpon>202101050026388_mega_mig.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101050045263_icollection_to_list.resx">
-      <DependentUpon>202101050045263_icollection_to_list.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101050311241_middlename.resx">
-      <DependentUpon>202101050311241_middlename.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101050334500_course_name.resx">
-      <DependentUpon>202101050334500_course_name.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101051131250_id.resx">
-      <DependentUpon>202101051131250_id.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101051202085_icollection.resx">
-      <DependentUpon>202101051202085_icollection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101051205482_subject_courses.resx">
-      <DependentUpon>202101051205482_subject_courses.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202101221200207_initialMigration.resx">
+      <DependentUpon>202101221200207_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

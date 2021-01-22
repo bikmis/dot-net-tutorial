@@ -9,7 +9,7 @@ namespace MyDataRepository
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
-        private SchoolContext context = new SchoolContext();
+        private SchoolContext context = new SchoolContextFactory().Create();
         private Repository<Student> studentRepository;
         private Repository<Course> courseRepository;
         private Repository<Subject> subjectRepository;
