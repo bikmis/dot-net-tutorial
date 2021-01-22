@@ -16,7 +16,7 @@
 					and select ADO.NET Entity Data Model template.
 
  
-- (a) Go to Tools -> NuGet Package Manager -> Package Manager Console (b) PM>enable-migrations -> it will create Migrations folder 
+- Migrations: (a) Go to Tools -> NuGet Package Manager -> Package Manager Console (b) PM>enable-migrations -> it will create Migrations folder 
 	   with Configuratin.cs file (c)PM>add-migration "name" -> this will add a new migration file to Migrations folder. (d) PM>update-database -> this will fire migration code in the database.
 - Add a reference to System.Configuration to use ConfigurationManager to access configuration string from web.config or app.config.
 - SchoolDb should be added to ConfigurationStrings element in the web.config of the mvc client project and the app.config of this project.
@@ -26,5 +26,5 @@
       <connectionStrings>
          <add name="SchoolDb"
               connectionString="Data Source=localhost; Initial Catalog=SchoolDb; Integrated Security=True;"
-                     providerName="System.Data.SqlClient" />
+              providerName="System.Data.SqlClient" />
       </connectionStrings>
