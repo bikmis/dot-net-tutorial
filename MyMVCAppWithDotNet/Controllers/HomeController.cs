@@ -1,4 +1,5 @@
-﻿using MyDataRepository;
+﻿using MyDataRepository.Contracts;
+using MyDataRepository.Repository;
 using MyMVCAppWithDotNet.HelloServiceReference;
 using MyMVCAppWithDotNet.MathServiceReference;
 using MyMVCAppWithDotNet.NameServiceReference;

@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyDataRepository;
+using MyDataRepository.Contracts;
+using MyDataRepository.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyDataRepository.IRepository
+namespace MyDataRepository.Contracts 
 {
     public interface IStudentRepository
     {

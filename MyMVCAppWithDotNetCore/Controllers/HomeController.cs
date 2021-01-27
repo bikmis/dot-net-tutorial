@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
 using MyDataRepository;
+using MyDataRepository.Contracts;
 using NameServiceReference;
 using System;
 using System.Collections.Generic;

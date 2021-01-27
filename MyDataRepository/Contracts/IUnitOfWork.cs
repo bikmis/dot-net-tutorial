@@ -1,13 +1,7 @@
 ﻿using MyDataRepository.Entities;
-using MyDataRepository.IRepository;
 using MyDataRepository.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MyDataRepository
+namespace MyDataRepository.Contracts
 {
     public interface IUnitOfWork : IStudentRepository
     {
