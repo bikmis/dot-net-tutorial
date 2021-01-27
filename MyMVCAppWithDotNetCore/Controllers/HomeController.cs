@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
 using MyDataRepository.Interfaces;
+using MyMVCAppWithDotNetCore.Interfaces;
+using MyMVCAppWithDotNetCore.Services;
 using NameServiceReference;
 using System.Diagnostics;
 using System.Linq;
@@ -16,10 +18,18 @@ namespace MyCoreApp.Controllers
         private readonly IUnitOfWork _db;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger, IUnitOfWork db)
+        private readonly IScopedGuidNumber _scopedGuidNumber;
+        private readonly ITransientGuidNumber _transientGuidNumber;
+        private readonly ISingletonGuidNumber _singletonGuidNumber;
+        private readonly GuidService _guidService;
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork db, IScopedGuidNumber scopedGuidNumber, ITransientGuidNumber transientGuidNumber, ISingletonGuidNumber singletonGuidNumber, GuidService guidService)
         {
             _db = db;
             _logger = logger;
+            _scopedGuidNumber = scopedGuidNumber;
+            _transientGuidNumber = transientGuidNumber;
+            _singletonGuidNumber = singletonGuidNumber;
+            _guidService = guidService;
         }
 
         public IActionResult Index()
@@ -43,6 +53,16 @@ namespace MyCoreApp.Controllers
             var student = _db.RegisterStudent(1);
 
             ViewBag.Student = _db.StudentRepository.GetAll().FirstOrDefault().FirstName;
+
+
+            ViewBag.ScopedGuidNumber = _scopedGuidNumber.CreateGuidNumber();
+            ViewBag.TransientGuidNumber = _transientGuidNumber.CreateGuidNumber();
+            ViewBag.SingletonGuidNumber = _singletonGuidNumber.CreateGuidNumber();
+
+
+            ViewBag.ScopedGuidNumber2 = _guidService.ScopedGuidNumber.CreateGuidNumber();
+            ViewBag.TransientGuidNumber2= _guidService.TransientGuidNumber.CreateGuidNumber();
+            ViewBag.SingletonGuidNumber2 = _guidService.SingletonGuidNumber.CreateGuidNumber();
             return View();
         }
 

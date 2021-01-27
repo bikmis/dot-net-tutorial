@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyDataRepository.Implementations;
 using MyDataRepository.Interfaces;
+using MyMVCAppWithDotNetCore.Implementations;
+using MyMVCAppWithDotNetCore.Interfaces;
+using MyMVCAppWithDotNetCore.Services;
 
 namespace MyCoreApp
 {
@@ -22,6 +25,10 @@ namespace MyCoreApp
         {
             services.AddControllersWithViews();
             services.AddScoped<IUnitOfWork>(_ => new UnitOfWork(Configuration.GetConnectionString("SchoolDb")));
+            services.AddSingleton<ISingletonGuidNumber, GuidNumber>();
+            services.AddScoped<IScopedGuidNumber, GuidNumber>();
+            services.AddTransient<ITransientGuidNumber, GuidNumber>();
+            services.AddTransient<GuidService, GuidService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

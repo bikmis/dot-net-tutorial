@@ -18,16 +18,31 @@
     <br />
     @foreach (var book in ViewBag.books)
     {
-        <ul>
-            <li>
-                Title: @book.Title, Price: @book.Price
-            </li>
-        </ul>
+    <ul>
+        <li>
+            Title: @book.Title, Price: @book.Price
+        </li>
+    </ul>
     }
     <br />
     @ViewBag.HelloMessage (message from Hello Service)
     <br />
 
     Student: @ViewBag.Student
-
+    <br />
+    <br />
+    Singlton Guid Number: @ViewBag.SingletonGuidNumber
+    <br />
+    Singlton Guid Number: @ViewBag.SingletonGuidNumber2
+    <br />
+    <br />
+    Transient Guid Number: @ViewBag.TransientGuidNumber
+    <br />
+    Transient Guid Number: @ViewBag.TransientGuidNumber2
+    <br />
+    <br />
+    Scoped Guid Number: @ViewBag.ScopedGuidNumber
+    <br />
+    Scoped Guid Number: @ViewBag.ScopedGuidNumber2
+    <br />
 </div>
