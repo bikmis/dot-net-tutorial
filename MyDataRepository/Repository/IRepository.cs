@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace MyDataRepository.Contracts
+namespace MyDataRepository.Repository
 {
     public interface IRepository<TEntity> where TEntity : class
     {

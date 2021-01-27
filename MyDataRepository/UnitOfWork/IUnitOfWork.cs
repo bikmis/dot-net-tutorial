@@ -1,7 +1,7 @@
 ﻿using MyDataRepository.Entities;
 using MyDataRepository.Repository;
 
-namespace MyDataRepository.Contracts
+namespace MyDataRepository.UnitOfWork
 {
     public interface IUnitOfWork : IStudentRepository
     {

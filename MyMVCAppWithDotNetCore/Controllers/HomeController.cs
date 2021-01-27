@@ -3,14 +3,10 @@ using MathServiceReference;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
-using MyDataRepository;
-using MyDataRepository.Contracts;
+using MyDataRepository.UnitOfWork;
 using NameServiceReference;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 using WriterServiceReference;
 
 namespace MyCoreApp.Controllers
