@@ -40,6 +40,8 @@ namespace MyCoreApp.Controllers
             var helloMessage = helloService.SayHello();
             ViewBag.HelloMessage = helloMessage;
 
+            var student = _db.RegisterStudent(1);
+
             ViewBag.Student = _db.StudentRepository.GetAll().FirstOrDefault().FirstName;
             return View();
         }
