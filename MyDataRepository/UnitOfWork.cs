@@ -1,16 +1,14 @@
 ﻿using MyDataRepository.Entities;
+using MyDataRepository.Repository;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyDataRepository
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private SchoolContext context;
-        public UnitOfWork(string connectionString) {
+        public UnitOfWork(string connectionString)
+        {
             context = new SchoolContextFactory(connectionString).Create();
         }
 
@@ -19,28 +17,35 @@ namespace MyDataRepository
         private Repository<Subject> subjectRepository;
         private Repository<Address> addressRepository;
 
-        public Repository<Student> StudentRepository { 
-            get 
-            { 
-                studentRepository = new Repository<Student>(context); 
-                return studentRepository; 
-            } 
+        public Repository<Student> StudentRepository
+        {
+            get
+            {
+                studentRepository = new Repository<Student>(context);
+                return studentRepository;
+            }
         }
 
-        public Repository<Course> CourseRepository {
-            get {
+        public Repository<Course> CourseRepository
+        {
+            get
+            {
                 courseRepository = new Repository<Course>(context);
                 return courseRepository;
             }
         }
-        public Repository<Subject> SubjectRepository {
-            get {
+        public Repository<Subject> SubjectRepository
+        {
+            get
+            {
                 subjectRepository = new Repository<Subject>(context);
                 return subjectRepository;
             }
         }
-        public Repository<Address> AddressRepository {
-            get {
+        public Repository<Address> AddressRepository
+        {
+            get
+            {
                 addressRepository = new Repository<Address>(context);
                 return addressRepository;
             }
@@ -69,6 +74,12 @@ namespace MyDataRepository
         {
             Dispose(true);
             GC.SuppressFinalize(this);
+        }
+
+        public Student RegisterStudent(int id)
+        {
+            var student = StudentRepository.GetById(id);
+            return student;
         }
     }
 }

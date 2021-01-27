@@ -46,6 +46,8 @@ namespace MyMVC_App_With_DotNet.Controllers
             var students = unitOfWork.StudentRepository.GetAll().ToList();
             ViewBag.Students = students;
 
+            var student = unitOfWork.RegisterStudent(1);
+
             return View();
         }
 
