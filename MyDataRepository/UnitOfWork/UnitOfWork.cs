@@ -79,6 +79,9 @@ namespace MyDataRepository.UnitOfWork
         public Student RegisterStudent(int id)
         {
             var student = StudentRepository.GetById(id);
+            student.Gender = "Female";
+            studentRepository.Update(student);
+            Save();
             // student is registered.
             return student;
         }
