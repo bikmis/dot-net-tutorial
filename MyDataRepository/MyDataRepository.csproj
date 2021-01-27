@@ -52,9 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\IStudentRepository.cs" />
-    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IStudentRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\Student.cs" />
@@ -69,9 +69,9 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Implementations\Repository.cs" />
     <Compile Include="SchoolContext.cs" />
-    <Compile Include="UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="Implementations\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

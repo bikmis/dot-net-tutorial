@@ -1,8 +1,8 @@
 ﻿using MyDataRepository.Entities;
-using MyDataRepository.Repository;
+using MyDataRepository.Interfaces;
 using System;
 
-namespace MyDataRepository.UnitOfWork
+namespace MyDataRepository.Implementations
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MyDataRepository.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MyDataRepository.Repository
+namespace MyDataRepository.Implementations
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

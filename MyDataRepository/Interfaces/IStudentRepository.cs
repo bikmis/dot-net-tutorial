@@ -1,6 +1,6 @@
 ﻿using MyDataRepository.Entities;
 
-namespace MyDataRepository.Repository
+namespace MyDataRepository.Interfaces
 {
     public interface IStudentRepository
     {
