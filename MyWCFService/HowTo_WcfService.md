@@ -32,4 +32,4 @@
       <add binding="basicHttpsBinding" scheme="https"/>
     </protocolMapping>
     <serviceHostingEnvironment aspNetCompatibilityEnabled="true" multipleSiteBindingsEnabled="true"/>
-  </system.serviceModel>
+</system.serviceModel>
