@@ -31,4 +31,5 @@
   "ConnectionStrings": {
     "SchoolDb": "Data Source=localhost;Initial Catalog=SchoolDb;Integrated Security=true;"
   }
-
+- Click on View -> SQL Server Object Explorer. Click on Add Sql Server, then you see three options: Local, Network and Azure. Select the server name with your computer name.
+  Then you will see all databases in that SQL Server.

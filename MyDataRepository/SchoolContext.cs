@@ -47,7 +47,7 @@ namespace MyDataRepository
 
         public SchoolContextFactory()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ToString();
+            _connectionString = ConfigurationManager.ConnectionStrings["SchoolDb"].ConnectionString;
         }
 
         public SchoolContextFactory(string connectionString)
