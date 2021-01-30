@@ -1,6 +1,7 @@
 ﻿How to create a WCF Service:
 
 - Right-click on the solution and add a new project of "WCF Service" template.
+- WCF Service is a website template. To rename this website you need to rename it in .vs/solution_name/config/applicationhost.config at the element <site name="Change the name here..." id="..."></site>
 - Create an interface INameService.cs in the App_Code folder and implement the interface with "NameService.cs""
 - Add a new file Name.svc with the following code.
 	<%@ ServiceHost Language="C#" Debug="true" Service="NameService" CodeBehind="~/App_Code/NameService.cs" %>
