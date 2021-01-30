@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="01bb06b8-8219-4d90-8ed9-0315eccab6d5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="19f21071-c018-43fa-aa9a-ee82a8a25a70" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/MyWcfService/WriterService.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:58872/WriterService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WriterService1.wsdl" MetadataType="Wsdl" ID="74bac3e1-da67-43e0-8457-2a5a33e63bc1" SourceId="1" SourceUrl="http://localhost/MyWcfService/WriterService.svc?wsdl" />
-    <MetadataFile FileName="WriterService3.xsd" MetadataType="Schema" ID="c07eff69-b83a-4816-b5e1-4049bfd58841" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd2" />
-    <MetadataFile FileName="WriterService31.xsd" MetadataType="Schema" ID="40604823-939a-4786-8833-ab6afbe30f11" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd0" />
-    <MetadataFile FileName="WriterService32.xsd" MetadataType="Schema" ID="9dad5947-49f8-4dd0-a8b8-3a82cbc819d7" SourceId="1" SourceUrl="http://localhost/MyWCFService/WriterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WriterService.xsd" MetadataType="Schema" ID="1a2326d0-510a-4d2f-8db1-740ecfc006d9" SourceId="1" SourceUrl="http://localhost:58872/WriterService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WriterService1.xsd" MetadataType="Schema" ID="dcc6b5e9-ee14-4390-88ce-b51f79a84cff" SourceId="1" SourceUrl="http://localhost:58872/WriterService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WriterService2.xsd" MetadataType="Schema" ID="76363f7f-9ca4-433e-afb7-60908e29a63e" SourceId="1" SourceUrl="http://localhost:58872/WriterService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WriterService.disco" MetadataType="Disco" ID="47ea6db3-2127-478f-8935-baf9fa1f2f9f" SourceId="1" SourceUrl="http://localhost:58872/WriterService.svc?disco" />
+    <MetadataFile FileName="WriterService.wsdl" MetadataType="Wsdl" ID="8d93a9a0-df49-4713-b89b-65a9f89fc854" SourceId="1" SourceUrl="http://localhost:58872/WriterService.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

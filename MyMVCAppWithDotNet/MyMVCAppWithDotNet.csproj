@@ -169,8 +169,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\MathServiceReference\MathService.wsdl" />
-    <None Include="Connected Services\NameServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\NameServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\HelloServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\HelloServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\HelloServiceReference\Reference.svcmap">
@@ -187,38 +185,26 @@
     <Content Include="Connected Services\NameServiceReference\MyMVCAppWithDotNet.NameServiceReference.FullName.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\NameServiceReference\Name3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NameServiceReference\Name31.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NameServiceReference\Name32.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\NameServiceReference\NameService1.wsdl" />
+    <None Include="Connected Services\NameServiceReference\Name.disco" />
+    <None Include="Connected Services\NameServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\NameServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\NameServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\TestServiceReference\Test.disco" />
     <None Include="Connected Services\TestServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\TestServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\TestServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\TestServiceReference\Test.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\TestServiceReference\Test1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\TestServiceReference\TestService.wsdl" />
-    <None Include="Connected Services\WriterServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\WriterServiceReference\configuration.svcinfo" />
     <Content Include="Connected Services\WriterServiceReference\MyMVCAppWithDotNet.WriterServiceReference.Book.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\WriterServiceReference\WriterService.disco" />
+    <None Include="Connected Services\WriterServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\WriterServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\WriterServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -233,17 +219,34 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Connected Services\WriterServiceReference\WriterService1.wsdl" />
-    <None Include="Connected Services\WriterServiceReference\WriterService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WriterServiceReference\WriterService31.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\WriterServiceReference\WriterService32.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="HowToMVC.md" />
+    <None Include="Connected Services\NameServiceReference\Name.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NameServiceReference\Name1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NameServiceReference\Name2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\NameServiceReference\NameService.wsdl" />
+    <None Include="Connected Services\TestServiceReference\Test.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TestServiceReference\Test1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\TestServiceReference\TestService.wsdl" />
+    <None Include="Connected Services\WriterServiceReference\WriterService.wsdl" />
+    <None Include="Connected Services\WriterServiceReference\WriterService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WriterServiceReference\WriterService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WriterServiceReference\WriterService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
