@@ -54,11 +54,9 @@ namespace MyCoreApp.Controllers
 
             ViewBag.Student = _db.StudentRepository.GetAll().FirstOrDefault().FirstName;
 
-
             ViewBag.ScopedGuidNumber = _scopedGuidNumber.CreateGuidNumber();
             ViewBag.TransientGuidNumber = _transientGuidNumber.CreateGuidNumber();
             ViewBag.SingletonGuidNumber = _singletonGuidNumber.CreateGuidNumber();
-
 
             ViewBag.ScopedGuidNumber2 = _guidService.ScopedGuidNumber.CreateGuidNumber();
             ViewBag.TransientGuidNumber2= _guidService.TransientGuidNumber.CreateGuidNumber();

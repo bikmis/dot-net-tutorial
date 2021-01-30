@@ -165,7 +165,7 @@ namespace NameServiceReference
         {
             if ((endpointConfiguration == EndpointConfiguration.NameService))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost/MyWCFService/Name.svc/NameService");
+                return new System.ServiceModel.EndpointAddress("http://localhost:58872/Name.svc/NameService");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
