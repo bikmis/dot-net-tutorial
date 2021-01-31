@@ -50,15 +50,15 @@
       <s:element name="Divide">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
-            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:decimal" />
           </s:sequence>
         </s:complexType>
       </s:element>
       <s:element name="DivideResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="DivideResult" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DivideResult" type="s:decimal" />
           </s:sequence>
         </s:complexType>
       </s:element>

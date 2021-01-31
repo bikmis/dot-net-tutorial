@@ -35,7 +35,7 @@ namespace MyWebApplicationForAsmxWebService
         }
 
         [WebMethod]
-        public int Divide(int a, int b)
+        public decimal Divide(decimal a, decimal b)
         {
             return a / b;
         }

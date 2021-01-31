@@ -34,10 +34,10 @@ namespace MyMVCAppWithDotNet.MathServiceAsmxReference {
         System.Threading.Tasks.Task<int> MultiplyAsync(int a, int b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Divide", ReplyAction="*")]
-        int Divide(int a, int b);
+        decimal Divide(decimal a, decimal b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Divide", ReplyAction="*")]
-        System.Threading.Tasks.Task<int> DivideAsync(int a, int b);
+        System.Threading.Tasks.Task<decimal> DivideAsync(decimal a, decimal b);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -91,11 +91,11 @@ namespace MyMVCAppWithDotNet.MathServiceAsmxReference {
             return base.Channel.MultiplyAsync(a, b);
         }
         
-        public int Divide(int a, int b) {
+        public decimal Divide(decimal a, decimal b) {
             return base.Channel.Divide(a, b);
         }
         
-        public System.Threading.Tasks.Task<int> DivideAsync(int a, int b) {
+        public System.Threading.Tasks.Task<decimal> DivideAsync(decimal a, decimal b) {
             return base.Channel.DivideAsync(a, b);
         }
     }

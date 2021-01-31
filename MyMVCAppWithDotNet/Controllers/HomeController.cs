@@ -63,7 +63,7 @@ namespace MyMVC_App_With_DotNet.Controllers
         public ActionResult Math(MathViewModel viewModel) {
           //  if (viewModel.Number2 != 0) {
                 MathServiceSoapClient mathServiceAsmx = new MathServiceSoapClient();
-                var divideResult = mathServiceAsmx.Divide((int)viewModel.Number1, (int)viewModel.Number2);
+                var divideResult = mathServiceAsmx.Divide(viewModel.Number1, viewModel.Number2);
                 viewModel.DivideResult = divideResult;
          //   }
             return View(viewModel);
