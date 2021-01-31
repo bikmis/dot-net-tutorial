@@ -1,0 +1,26 @@
+﻿@model MyMVC_App_With_DotNet.Controllers.MathViewModel
+
+@{
+    ViewBag.Title = "Math";
+}
+
+<h2>Math</h2>
+@using (Html.BeginForm("Math", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Number1, "Number1")
+    <br />
+    @Html.TextBoxFor(m => m.Number1);
+    <br />
+    <br />
+    @Html.LabelFor(m => m.Number2, "Number2")
+    <br />
+    @Html.TextBoxFor(m => m.Number2);
+    <br />
+    <br />
+    @Html.Label("Divide Result")
+    <br />
+    @Html.DisplayFor(m => m.DivideResult);
+    <br />
+    <br />
+    <button type="submit">Divide</button>
+}

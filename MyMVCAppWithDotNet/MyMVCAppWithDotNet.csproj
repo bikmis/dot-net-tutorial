@@ -134,7 +134,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\MathServiceReference\Reference.cs">
+    <Compile Include="Connected Services\MathServiceAsmxReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -168,17 +168,17 @@
     <None Include="Connected Services\HelloServiceReference\HelloService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\MathServiceReference\MathService.wsdl" />
+    <None Include="Connected Services\MathServiceAsmxReference\MathService.wsdl" />
     <None Include="Connected Services\HelloServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\HelloServiceReference\configuration.svcinfo" />
     <None Include="Connected Services\HelloServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\MathServiceReference\MathService.disco" />
-    <None Include="Connected Services\MathServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\MathServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\MathServiceReference\Reference.svcmap">
+    <None Include="Connected Services\MathServiceAsmxReference\MathService.disco" />
+    <None Include="Connected Services\MathServiceAsmxReference\configuration91.svcinfo" />
+    <None Include="Connected Services\MathServiceAsmxReference\configuration.svcinfo" />
+    <None Include="Connected Services\MathServiceAsmxReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -272,6 +272,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Math.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,7 +296,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\HelloServiceReference\" />
-    <WCFMetadataStorage Include="Connected Services\MathServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\MathServiceAsmxReference\" />
     <WCFMetadataStorage Include="Connected Services\NameServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\TestServiceReference\" />
     <WCFMetadataStorage Include="Connected Services\WriterServiceReference\" />

@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyMVCAppWithDotNet.MathServiceReference {
+namespace MyMVCAppWithDotNet.MathServiceAsmxReference {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MathServiceReference.MathServiceSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="MathServiceAsmxReference.MathServiceSoap")]
     public interface MathServiceSoap {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Add", ReplyAction="*")]
@@ -41,12 +41,12 @@ namespace MyMVCAppWithDotNet.MathServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface MathServiceSoapChannel : MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap, System.ServiceModel.IClientChannel {
+    public interface MathServiceSoapChannel : MyMVCAppWithDotNet.MathServiceAsmxReference.MathServiceSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap>, MyMVCAppWithDotNet.MathServiceReference.MathServiceSoap {
+    public partial class MathServiceSoapClient : System.ServiceModel.ClientBase<MyMVCAppWithDotNet.MathServiceAsmxReference.MathServiceSoap>, MyMVCAppWithDotNet.MathServiceAsmxReference.MathServiceSoap {
         
         public MathServiceSoapClient() {
         }

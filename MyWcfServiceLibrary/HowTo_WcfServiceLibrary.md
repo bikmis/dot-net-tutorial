@@ -14,4 +14,5 @@ Wcf Test Client:
 - Once the service is hosted in IIS or Wcf Service Host during development. We can run Wcftestclient.exe from Visual Studio command prompt(PowerShell) - it opens a wcf client window.
 - We then need to add service (File -> Add Service) e.g. add "http://localhost:8733/Design_Time_Addresses/MyWcfServiceLibrary/Service1/mex".
 
+FaultException
 
