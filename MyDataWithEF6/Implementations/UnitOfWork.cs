@@ -1,8 +1,8 @@
-﻿using MyDataRepository.Entities;
-using MyDataRepository.Interfaces;
+﻿using MyDataWithEF6.Entities;
+using MyDataWithEF6.Interfaces;
 using System;
 
-namespace MyDataRepository.Implementations
+namespace MyDataWithEF6.Implementations
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {

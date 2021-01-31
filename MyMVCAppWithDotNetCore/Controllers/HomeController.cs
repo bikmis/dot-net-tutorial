@@ -3,7 +3,7 @@ using MathServiceReference;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyCoreApp.Models;
-using MyDataRepository.Interfaces;
+using MyDataWithEF6.Interfaces;
 using MyMVCAppWithDotNetCore.Interfaces;
 using MyMVCAppWithDotNetCore.Services;
 using NameServiceReference;

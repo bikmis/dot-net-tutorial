@@ -1,6 +1,6 @@
-﻿using MyDataRepository.Entities;
+﻿using MyDataWithEF6.Entities;
 
-namespace MyDataRepository.Interfaces
+namespace MyDataWithEF6.Interfaces
 {
     public interface IStudentRepository
     {

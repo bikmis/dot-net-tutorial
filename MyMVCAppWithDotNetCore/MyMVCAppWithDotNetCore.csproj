@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyDataRepository\MyDataRepository.csproj" />
+    <ProjectReference Include="..\MyDataWithEF6\MyDataWithEF6.csproj" />
   </ItemGroup>
 
   <ItemGroup>

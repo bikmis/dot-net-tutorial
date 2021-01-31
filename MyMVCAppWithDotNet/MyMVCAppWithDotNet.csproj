@@ -301,9 +301,9 @@
     <WCFMetadataStorage Include="Connected Services\WriterServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyDataRepository\MyDataRepository.csproj">
+    <ProjectReference Include="..\MyDataWithEF6\MyDataWithEF6.csproj">
       <Project>{e300d49d-71b7-4718-8303-f72a7543d984}</Project>
-      <Name>MyDataRepository</Name>
+      <Name>MyDataWithEF6</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

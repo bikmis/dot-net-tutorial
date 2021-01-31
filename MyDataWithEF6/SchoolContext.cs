@@ -1,4 +1,4 @@
-﻿using MyDataRepository.Entities;
+﻿using MyDataWithEF6.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Configuration;
 using System.Data.Entity.Infrastructure;
 
-namespace MyDataRepository
+namespace MyDataWithEF6
 {
     public class SchoolContext : DbContext
     {

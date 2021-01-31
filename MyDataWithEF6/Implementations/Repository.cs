@@ -1,11 +1,11 @@
-﻿using MyDataRepository.Interfaces;
+﻿using MyDataWithEF6.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MyDataRepository.Implementations
+namespace MyDataWithEF6.Implementations
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

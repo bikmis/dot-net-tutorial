@@ -40,7 +40,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebApplicationForAsmxWebS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccessLayer", "DataAccessLayer", "{D5FBCD24-A37C-4148-A45E-B76A3D779A95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataRepository", "MyDataRepository\MyDataRepository.csproj", "{E300D49D-71B7-4718-8303-F72A7543D984}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataWithEF6", "MyDataWithEF6\MyDataWithEF6.csproj", "{E300D49D-71B7-4718-8303-F72A7543D984}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyHelp", "MyHelp", "{F8550688-6594-4A99-A68E-1D3298E271BC}"
 	ProjectSection(SolutionItems) = preProject

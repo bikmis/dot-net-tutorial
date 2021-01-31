@@ -1,5 +1,5 @@
-﻿using MyDataRepository.Implementations;
-using MyDataRepository.Interfaces;
+﻿using MyDataWithEF6.Implementations;
+using MyDataWithEF6.Interfaces;
 using MyMVCAppWithDotNet.HelloServiceReference;
 using MyMVCAppWithDotNet.MathServiceReference;
 using MyMVCAppWithDotNet.NameServiceReference;

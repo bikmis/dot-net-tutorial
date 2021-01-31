@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyDataRepository.Entities
+namespace MyDataWithEF6.Entities
 {
     public class Course
     {
