@@ -25,7 +25,7 @@ How to create and run Angular application in .net 5 (.net core)
   </system.webServer>
 </configuration>
 
-4. Change'/' to the IIS application name in "href" attribute of "base" element in index.html.
+4. Change'/' to the IIS application name in "href" attribute of "base" element in index.html (this is for running in the IIS, but for IIS Express leave the baseHref to '/'.)
 
 5. If already not installed, install URL Rewrite (https://www.iis.net/downloads/microsoft/url-rewrite). Create an application in IIS 
    and set its name (alias) to the project name. Create an app pool with project_name_app_pool. 
@@ -44,8 +44,8 @@ How to create and run Angular application in .net 5 (.net core)
 
                 if (env.IsDevelopment())
                 {
-                    // spa.UseAngularCliServer(npmScript: "start");
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+                    // spa.UseAngularCliServer(npmScript: "start");  //this is for running in iis express
+                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200"); // (this is for running in the iis)
                 }
             });
 
