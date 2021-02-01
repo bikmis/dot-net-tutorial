@@ -1,11 +1,11 @@
 ﻿@model MyMVCAppWithDotNet.Models.MathViewModel
 
 @{
-    ViewBag.Title = "Math";
+    ViewBag.Title = "Math(WCF)";
 }
 
-<h2>Math</h2>
-@using (Html.BeginForm("Math", "Home", FormMethod.Post))
+<h2>Math(WCF)</h2>
+@using (Html.BeginForm("MathWcf", "Home", FormMethod.Post))
 {
     @Html.LabelFor(m => m.Number1, "Number1")
     <br />

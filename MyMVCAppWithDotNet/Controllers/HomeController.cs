@@ -2,6 +2,7 @@
 using MyDataWithEF6.Interfaces;
 using MyMVCAppWithDotNet.HelloServiceReference;
 using MyMVCAppWithDotNet.MathServiceAsmxReference;
+using MyMVCAppWithDotNet.MathServiceWcfReference;
 using MyMVCAppWithDotNet.Models;
 using MyMVCAppWithDotNet.NameServiceReference;
 using MyMVCAppWithDotNet.TestServiceReference;
@@ -55,7 +56,7 @@ namespace MyMVCAppWithDotNet.Controllers
             return View();
         }
 
-        public ActionResult Math(MathViewModel viewModel, string button) {
+        public ActionResult MathAsmx(MathViewModel viewModel, string button) {
             if (button == "Clear") {
                 ModelState.Clear();
                 viewModel = new MathViewModel();
@@ -68,6 +69,21 @@ namespace MyMVCAppWithDotNet.Controllers
             }
             return View(viewModel);
         }
+
+        public ActionResult MathWcf(MathViewModel viewModel, string button) {
+            if (button == "Clear") {
+                ModelState.Clear();
+                viewModel = new MathViewModel();
+            }
+            if (!string.IsNullOrEmpty(viewModel.Number2)) {
+                MathServiceClient mathServiceClient = new MathServiceClient();
+                var divideResult = mathServiceClient.Divide(Convert.ToDecimal(viewModel.Number1), Convert.ToDecimal(viewModel.Number2));
+                viewModel.DivideResult = divideResult.ToString();
+            }
+
+            return View(viewModel);
+        }
+
 
         public ActionResult About()
         {
