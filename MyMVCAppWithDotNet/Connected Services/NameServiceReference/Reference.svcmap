@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:58872/Name.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/MyWCFService/Name.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Name.xsd" MetadataType="Schema" ID="7a0507a6-bfb5-48c1-8463-3ee235c03aa4" SourceId="1" SourceUrl="http://localhost:58872/Name.svc?xsd=xsd1" />
-    <MetadataFile FileName="NameService.wsdl" MetadataType="Wsdl" ID="5b016f96-fc16-4c65-a99e-71f7b6cbdd70" SourceId="1" SourceUrl="http://localhost:58872/Name.svc?wsdl" />
-    <MetadataFile FileName="Name1.xsd" MetadataType="Schema" ID="9aa2e4d5-ab30-421e-951c-d5a32ada78b6" SourceId="1" SourceUrl="http://localhost:58872/Name.svc?xsd=xsd2" />
-    <MetadataFile FileName="Name.disco" MetadataType="Disco" ID="2dd165ae-9b73-406b-9594-b2f79cdc8e44" SourceId="1" SourceUrl="http://localhost:58872/Name.svc?disco" />
-    <MetadataFile FileName="Name2.xsd" MetadataType="Schema" ID="d787a33b-666b-40a6-86a6-4bb7fb75a3a8" SourceId="1" SourceUrl="http://localhost:58872/Name.svc?xsd=xsd0" />
+    <MetadataFile FileName="Name3.xsd" MetadataType="Schema" ID="2a13b88a-80c3-4169-a5c7-cbeff79dbd8b" SourceId="1" SourceUrl="http://localhost/MyWCFService/Name.svc?xsd=xsd2" />
+    <MetadataFile FileName="Name31.xsd" MetadataType="Schema" ID="50ea5794-24f4-4f96-9bbe-d072073f3d6b" SourceId="1" SourceUrl="http://localhost/MyWCFService/Name.svc?xsd=xsd0" />
+    <MetadataFile FileName="Name1.disco" MetadataType="Disco" ID="471274e0-d2f0-450b-ab21-c0e3556d92a6" SourceId="1" SourceUrl="http://localhost/MyWCFService/Name.svc?disco" />
+    <MetadataFile FileName="Name32.xsd" MetadataType="Schema" ID="135681b8-f21e-4fea-843d-641dc2e04248" SourceId="1" SourceUrl="http://localhost/MyWCFService/Name.svc?xsd=xsd1" />
+    <MetadataFile FileName="NameService1.wsdl" MetadataType="Wsdl" ID="5f504835-010f-4b0b-946d-313b7c9a7232" SourceId="1" SourceUrl="http://localhost/MyWCFService/Name.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

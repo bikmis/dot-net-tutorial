@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:58872/Test.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/MyWCFService/Test.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="TestService.wsdl" MetadataType="Wsdl" ID="2ffaae00-5a47-4630-b806-00fe59aa6c8c" SourceId="1" SourceUrl="http://localhost:58872/Test.svc?wsdl" />
-    <MetadataFile FileName="Test.disco" MetadataType="Disco" ID="082f5fa0-f9c1-4ea5-82b4-5aa6ede29c62" SourceId="1" SourceUrl="http://localhost:58872/Test.svc?disco" />
-    <MetadataFile FileName="Test.xsd" MetadataType="Schema" ID="0abfddb2-8829-4955-af1c-a781fa936ab4" SourceId="1" SourceUrl="http://localhost:58872/Test.svc?xsd=xsd0" />
-    <MetadataFile FileName="Test1.xsd" MetadataType="Schema" ID="90a8c386-b829-4892-8c11-01d47ba46eb0" SourceId="1" SourceUrl="http://localhost:58872/Test.svc?xsd=xsd1" />
+    <MetadataFile FileName="Test1.disco" MetadataType="Disco" ID="292b7988-c97b-4bc8-83f0-426a77067a2c" SourceId="1" SourceUrl="http://localhost/MyWCFService/Test.svc?disco" />
+    <MetadataFile FileName="TestService1.wsdl" MetadataType="Wsdl" ID="ca770dc3-191a-4d28-a663-762ec3c423c3" SourceId="1" SourceUrl="http://localhost/MyWCFService/Test.svc?wsdl" />
+    <MetadataFile FileName="Test2.xsd" MetadataType="Schema" ID="a9ae4f4d-0973-48ea-a78e-8976a1c8f6e4" SourceId="1" SourceUrl="http://localhost/MyWCFService/Test.svc?xsd=xsd0" />
+    <MetadataFile FileName="Test21.xsd" MetadataType="Schema" ID="93911239-3c7a-41d1-b53f-5f787d499ef6" SourceId="1" SourceUrl="http://localhost/MyWCFService/Test.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
