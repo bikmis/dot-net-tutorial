@@ -6,7 +6,7 @@
   },
   "ExtendedData": {
     "inputs": [
-      "http://localhost:58872/WriterService.svc"
+      "http://localhost/MyWCFService/WriterService.svc"
     ],
     "collectionTypes": [
       "System.Array",
