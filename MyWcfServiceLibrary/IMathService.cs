@@ -5,7 +5,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyWcfServiceLibrary.MathService
+namespace MyWcfServiceLibrary
 {
     [ServiceContract]
     public interface IMathService

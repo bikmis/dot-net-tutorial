@@ -56,8 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IWriterService.cs" />
-    <Compile Include="MathService\IMathService.cs" />
-    <Compile Include="MathService\MathService.cs" />
+    <Compile Include="IMathService.cs" />
+    <Compile Include="MathService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WriterService.cs" />
   </ItemGroup>
