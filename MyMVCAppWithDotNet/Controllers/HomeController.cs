@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.ServiceModel;
 using System.Web.Mvc;
 
 namespace MyMVCAppWithDotNet.Controllers
@@ -70,20 +71,30 @@ namespace MyMVCAppWithDotNet.Controllers
             return View(viewModel);
         }
 
-        public ActionResult MathWcf(MathViewModel viewModel, string button) {
-            if (button == "Clear") {
+        public ActionResult MathWcf(MathViewModel viewModel, string button)
+        {
+            if (button == "Clear")
+            {
                 ModelState.Clear();
                 viewModel = new MathViewModel();
-            }
-            if (!string.IsNullOrEmpty(viewModel.Number2)) {
-                MathServiceClient mathServiceClient = new MathServiceClient();
-                var divideResult = mathServiceClient.Divide(Convert.ToDecimal(viewModel.Number1), Convert.ToDecimal(viewModel.Number2));
-                viewModel.DivideResult = divideResult.ToString();
+                return View(viewModel);
             }
 
+            try
+            {
+                if (viewModel.Number2 != null)
+                {
+                    MathServiceClient mathServiceClient = new MathServiceClient();
+                    var divideResult = mathServiceClient.Divide(Convert.ToDecimal(viewModel.Number1), Convert.ToDecimal(viewModel.Number2));
+                    viewModel.DivideResult = divideResult.ToString();
+                }
+            }
+            catch (FaultException<Error> ex)
+            {
+                ViewBag.error = ex.Detail.ErrorMessage;
+            }
             return View(viewModel);
         }
-
 
         public ActionResult About()
         {

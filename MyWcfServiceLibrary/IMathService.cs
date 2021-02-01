@@ -11,6 +11,7 @@ namespace MyWcfServiceLibrary
     public interface IMathService
     {
         [OperationContract]
+        [FaultContract(typeof(Error))]
         decimal Divide(decimal number1, decimal number2);
     }
 }

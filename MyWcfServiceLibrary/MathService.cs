@@ -18,7 +18,8 @@ namespace MyWcfServiceLibrary
             }
             catch (Exception ex)
             {
-                throw new FaultException(ex.Message);
+                Error error = new Error() { ErrorCode = "no code", ErrorMessage = ex.Message };
+                throw new FaultException<Error>(error);
             }
         }
     }

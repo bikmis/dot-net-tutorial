@@ -22,6 +22,7 @@
     <MetadataSource Address="http://localhost/MyWCFService/MathService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="MathService2.xsd" MetadataType="Schema" ID="e7d44c17-f745-4598-9187-418a2b6c2845" SourceId="1" SourceUrl="http://localhost/MyWCFService/MathService.svc?xsd=xsd2" />
     <MetadataFile FileName="MathService.disco" MetadataType="Disco" ID="066df4b8-abfa-4c94-9bf9-44bc52750294" SourceId="1" SourceUrl="http://localhost/MyWCFService/MathService.svc?disco" />
     <MetadataFile FileName="MathService.wsdl" MetadataType="Wsdl" ID="473ce506-feac-4cae-ad6c-16b7d287a3b9" SourceId="1" SourceUrl="http://localhost/MyWCFService/MathService.svc?wsdl" />
     <MetadataFile FileName="MathService.xsd" MetadataType="Schema" ID="379b7f8a-8fe7-42d6-bf05-13295b721c9f" SourceId="1" SourceUrl="http://localhost/MyWCFService/MathService.svc?xsd=xsd0" />
