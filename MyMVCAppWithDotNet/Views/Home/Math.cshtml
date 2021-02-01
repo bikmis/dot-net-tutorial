@@ -1,4 +1,4 @@
-﻿@model MyMVC_App_With_DotNet.Controllers.MathViewModel
+﻿@model MyMVCAppWithDotNet.Models.MathViewModel
 
 @{
     ViewBag.Title = "Math";
@@ -22,5 +22,6 @@
     @Html.DisplayFor(m => m.DivideResult);
     <br />
     <br />
-    <button type="submit">Divide</button>
+    <button type="submit" name="button" value="Divide">Divide</button>
+    <button type="submit" name="button" value="Clear">Clear</button>
 }

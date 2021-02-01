@@ -2,23 +2,18 @@
 using MyDataWithEF6.Interfaces;
 using MyMVCAppWithDotNet.HelloServiceReference;
 using MyMVCAppWithDotNet.MathServiceAsmxReference;
+using MyMVCAppWithDotNet.Models;
 using MyMVCAppWithDotNet.NameServiceReference;
 using MyMVCAppWithDotNet.TestServiceReference;
 using MyMVCAppWithDotNet.WriterServiceReference;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace MyMVC_App_With_DotNet.Controllers
+namespace MyMVCAppWithDotNet.Controllers
 {
-
-    public class MathViewModel {
-        public decimal Number1 { get; set; }
-        public decimal Number2 { get; set; }
-        public decimal DivideResult { get; set; }
-    }
-
     public class HomeController : Controller
     {
         private readonly string connectionString;
@@ -60,12 +55,17 @@ namespace MyMVC_App_With_DotNet.Controllers
             return View();
         }
 
-        public ActionResult Math(MathViewModel viewModel) {
-          //  if (viewModel.Number2 != 0) {
+        public ActionResult Math(MathViewModel viewModel, string button) {
+            if (button == "Clear") {
+                ModelState.Clear();
+                viewModel = new MathViewModel();
+            }
+
+            if (!string.IsNullOrEmpty(viewModel.Number2)) {
                 MathServiceSoapClient mathServiceAsmx = new MathServiceSoapClient();
-                var divideResult = mathServiceAsmx.Divide(viewModel.Number1, viewModel.Number2);
-                viewModel.DivideResult = divideResult;
-         //   }
+                var divideResult = mathServiceAsmx.Divide(Convert.ToDecimal(viewModel.Number1), Convert.ToDecimal(viewModel.Number2));
+                viewModel.DivideResult = divideResult.ToString();
+            }
             return View(viewModel);
         }
 
