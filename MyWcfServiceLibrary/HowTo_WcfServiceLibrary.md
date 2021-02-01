@@ -40,3 +40,11 @@ FaultException
     ViewBag.error = ex.Detail.ErrorMessage;
   }
 
+- Message Logging and Tracing:
+  In the client project, right-click on the web.config and select "Edit WCF Configuration".
+  Click on Diagnostics.
+  Check Trace Auto Flush
+  - Check Message Logging (c:\users\bikash\source\repos\dot_net_tutorial\mymvcappwithdotnet\web_messages.svclog file is created), and 
+    Tracing (c:\users\bikash\source\repos\dot_net_tutorial\mymvcappwithdotnet\web_tracelog.svclog is created)
+  - Expand Diagnostics and click Message Logging and set Log Entire Message to true.
+  - The .svclog files are opened using Service Trace Viewer Tool (SvcTraceViewer.exe)
