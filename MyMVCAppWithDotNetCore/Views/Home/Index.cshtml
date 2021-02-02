@@ -18,11 +18,11 @@
     <br />
     @foreach (var book in ViewBag.books)
     {
-    <ul>
-        <li>
-            Title: @book.Title, Price: @book.Price
-        </li>
-    </ul>
+        <ul>
+            <li>
+                Title: @book.Title, Price: @book.Price
+            </li>
+        </ul>
     }
     <br />
     @ViewBag.HelloMessage (message from Hello Service)
@@ -45,4 +45,8 @@
     <br />
     Scoped Guid Number: @ViewBag.ScopedGuidNumber2
     <br />
+
+    @Html.ActionLink("Go To Privacy", "Privacy", "Home")
+    <a asp-action="Privacy" asp-controller="Home">Go to Privacy</a>
+
 </div>
