@@ -29,11 +29,11 @@
 
 - AOT (ahead of time) compilation: The application compiles during the build time for fast rendering.
 
-- JIT (just in time) compilation: The compiles inside the browser during runtime.
+- JIT (just in time) compilation: The application compiles inside the browser during runtime.
 
 - Interpolation is done using {{}} to bind data one-way from the component to the view.
 
-- Authentication and Authorization
+- Authentication (jwt) and Authorization
 
 - ng generate component name, ng generate directive name, ng g enum name, ng g guard name, ng g interceptor name, ng g interface name
 
