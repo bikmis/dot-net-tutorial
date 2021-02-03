@@ -91,3 +91,10 @@
     or not they are immediately necessary. For large apps with lots of routes, consider lazy loading - a design
     pattern that loads NgModules as needed. Lazy loading helps keep initial bundle sizes smaller, which in turn
     helps decrease load times. loadChildren with import used in a route to enable lazy-loading of a module.
+
+- greeting | Async (here greeting is a propmise or observable) - observable is directly subscibed in the template
+
+- {{birthdate | date }}, {{ amount | currency:'EUR'}}, {{birthday | date | uppercase}} is used for formatting such currency, date, uppercase etc
+  We can create our own pipe using PipeTransform
+
+
