@@ -21,7 +21,7 @@
 
 - Unit testing with Karma / Jasmine ng-test and end-to-end test with protractor
 
-- Lifecycle hooks - ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, ngOnDestroy
+- Lifecycle hooks - (1)ngOnChanges, (2)ngOnInit, (3)ngDoCheck, (4)ngAfterContentInit, (5)ngAfterContentChecked, (6)ngAfterViewInit, (7)ngAfterViewChecked, (8)ngOnDestroy
 
 - We can render angular application on the server side.
 
