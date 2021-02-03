@@ -1,14 +1,21 @@
-- What is ng-content, ng-template
-<ng-content></ng-content> projects content from a parent componet into a child component. We can pass dynamic text, html tags, components.
+- What is ng-content?
+    <ng-content></ng-content> projects content from a parent componet into a child component. We can pass dynamic text, html tags, components.
+    AddButtonChildComponent
+        selector: 'add-btn'
+        template: `<button class="" (click)="add()">
+                        <ng-content></ng-content>
+                   </button>`
 
-AddButtonChildComponent
-selector: 'add-btn'
-template: `<button class="" (click)="add()">
-                <ng-content></ng-content>
-           </button>`
+    ParentComponent
+        <add-btn>Add New Item</add-btn>
 
-ParentComponent
-<add-btn>Add New Item</add-btn>
+- What is ng-template?
+    Angular translates a structural directive such as *ngIf attribute into a <ng-template> element wrapped around the host element.
+        <div *ngIf="hero" class="name">{{hero.name}}</div>
+            translates into 
+        <ng-template [ngIf]="hero">
+            <div class="name">{{hero.name}}</div>
+        </ng-template>
 
 - Angular CLI
 
