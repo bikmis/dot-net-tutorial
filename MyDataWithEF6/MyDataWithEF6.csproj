@@ -99,6 +99,10 @@
     <Compile Include="Migrations\202102041645257_course.designer.cs">
       <DependentUpon>202102041645257_course.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102041712505_course_key.cs" />
+    <Compile Include="Migrations\202102041712505_course_key.designer.cs">
+      <DependentUpon>202102041712505_course_key.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementations\Repository.cs" />
@@ -137,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102041645257_course.resx">
       <DependentUpon>202102041645257_course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102041712505_course_key.resx">
+      <DependentUpon>202102041712505_course_key.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

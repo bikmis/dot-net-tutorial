@@ -10,7 +10,6 @@ namespace MyDataWithEF6.Interfaces
 {
     public interface IBaseEntity<TKey>
     {
-        [Key]
         TKey Id { get; set; }
     }
 }
