@@ -1,12 +1,14 @@
 ﻿using MyDataWithEF6.Implementations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace MyDataWithEF6.Entities
 {
-    public class Address : BaseEntityIntKey
+    public class Address : BaseEntity
     {
+        [Key]
         public string HouseNumber { get; set; }  //scalar property
         public string Street { get; set; }  //scalar property
         public string City { get; set; }   //scalar property
