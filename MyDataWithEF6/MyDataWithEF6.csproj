@@ -60,15 +60,6 @@
     <Compile Include="Entities\Course.cs" />
     <Compile Include="Entities\Student.cs" />
     <Compile Include="Entities\Subject.cs" />
-    <Compile Include="Migrations\202101221324310_initialMigration.cs" />
-    <Compile Include="Migrations\202101221324310_initialMigration.designer.cs">
-      <DependentUpon>202101221324310_initialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101221536158_student_fromOutOfState.cs" />
-    <Compile Include="Migrations\202101221536158_student_fromOutOfState.designer.cs">
-      <DependentUpon>202101221536158_student_fromOutOfState.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementations\Repository.cs" />
     <Compile Include="SchoolContext.cs" />
@@ -78,14 +69,6 @@
     <None Include="App.config" />
     <None Include="HowToEntityFramework.md" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202101221324310_initialMigration.resx">
-      <DependentUpon>202101221324310_initialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101221536158_student_fromOutOfState.resx">
-      <DependentUpon>202101221536158_student_fromOutOfState.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
