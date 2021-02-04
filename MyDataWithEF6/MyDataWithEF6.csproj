@@ -52,9 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\BaseEntityStringKey.cs" />
-    <Compile Include="Entities\BaseEntityIntKey.cs" />
+    <Compile Include="Implementations\BaseEntityStringKey.cs" />
+    <Compile Include="Implementations\BaseEntityIntKey.cs" />
+    <Compile Include="Interfaces\IBaseEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Interfaces\IStudentRepository.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
