@@ -14,7 +14,7 @@ namespace MyDataWithEF6.Entities
         public string Gender { get; set; }   //scalar property
         public DateTime? DOB { get; set; }   //scalar property
         public bool? FromOutOfState { get; set; }
-      //public virtual Address Address { get; set; }  //reference navigation property (multiplicity of one) (the column will be Address_AddressId(fk, int, null)
+        public virtual Address Address { get; set; }  //reference navigation property (multiplicity of one) (the column will be Address_AddressId(fk, int, null)
         public virtual Course Course { get; set; }  //reference navigation property (multiplicity of one) (the column will be Course_CourseId(fk, int, null)
     }
 }
