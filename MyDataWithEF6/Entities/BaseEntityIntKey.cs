@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyDataWithEF6.Entities
 {
-    public class BaseEntityString : BaseEntity
+    public class BaseEntityIntKey : BaseEntity
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
     }
 }

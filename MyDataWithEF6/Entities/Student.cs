@@ -4,9 +4,8 @@ using System.Text;
 
 namespace MyDataWithEF6.Entities
 {
-    public class Student: BaseEntityInt
+    public class Student: BaseEntityIntKey
     {
-       // public int Id { get; set; }  //scalar property
         public string FirstName { get; set; }   //scalar property
         public string MiddleName { get; set; }
         public string LastName { get; set; }   //scalar property

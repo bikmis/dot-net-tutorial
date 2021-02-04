@@ -4,9 +4,8 @@ using System.Text;
 
 namespace MyDataWithEF6.Entities
 {
-    public class Course : BaseEntityInt
+    public class Course : BaseEntityIntKey
     {
-       // public int Id { get; set; }
         public string Name { get; set; }      
         public double Tuition { get; set; } 
         public double DurationInYears { get; set; }
