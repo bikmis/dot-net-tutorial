@@ -13,10 +13,10 @@ namespace MyDataWithEF6
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
         internal SchoolDbContext(string connectionString) : base(connectionString)
         {
-            // Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolDbContext>()); //default if not mentioned here
-            //  Database.SetInitializer<SchoolContext>(new DropCreateDatabaseAlways<SchoolDbContext>()); //every run drops and creates a database
-            //  Database.SetInitializer<SchoolContext>(new DropCreateDatabaseIfModelChanges<SchoolDbContext>()); //every run drops and creates a database only if a model has changed
-
+            // Database.SetInitializer<SchoolDbContext>(null); //disable initializer
+            // Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolDbContext>()); //default
+            // Database.SetInitializer<SchoolContext>(new DropCreateDatabaseAlways<SchoolDbContext>()); //every run drops and creates a database
+            // Database.SetInitializer<SchoolContext>(new DropCreateDatabaseIfModelChanges<SchoolDbContext>()); //every run drops and creates a database only if a model has changed
         }
 
         public DbSet<Student> Students { get; set; }  // an entity is a class that maps to a database table.
