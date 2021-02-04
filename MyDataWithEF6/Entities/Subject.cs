@@ -8,6 +8,6 @@ namespace MyDataWithEF6.Entities
     public class Subject : BaseEntityIntKey
     {
         public string Name { get; set; }
-        public ICollection<Course> Courses { get; set; }
+     //   public ICollection<Course> Courses { get; set; }
     }
 }
