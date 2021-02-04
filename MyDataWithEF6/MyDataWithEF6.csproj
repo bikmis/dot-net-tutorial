@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Implementations\BaseEntityStringKey.cs" />
     <Compile Include="Implementations\BaseEntityIntKey.cs" />
     <Compile Include="Interfaces\IBaseEntity.cs" />
