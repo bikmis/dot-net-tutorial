@@ -44,6 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataWithEF6", "MyDataWith
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyHelp", "MyHelp", "{F8550688-6594-4A99-A68E-1D3298E271BC}"
 	ProjectSection(SolutionItems) = preProject
+		MyHelp\AdoDotNet.md = MyHelp\AdoDotNet.md
 		MyHelp\Angular with dot net 5(core).md = MyHelp\Angular with dot net 5(core).md
 		MyHelp\Angular.md = MyHelp\Angular.md
 		MyHelp\c#.md = MyHelp\c#.md
