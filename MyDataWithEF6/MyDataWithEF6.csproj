@@ -83,6 +83,10 @@
     <Compile Include="Migrations\202102040221349_base_entity_int_string.designer.cs">
       <DependentUpon>202102040221349_base_entity_int_string.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102041617141_address.cs" />
+    <Compile Include="Migrations\202102041617141_address.designer.cs">
+      <DependentUpon>202102041617141_address.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementations\Repository.cs" />
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102040221349_base_entity_int_string.resx">
       <DependentUpon>202102040221349_base_entity_int_string.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102041617141_address.resx">
+      <DependentUpon>202102041617141_address.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

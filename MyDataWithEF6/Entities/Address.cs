@@ -12,6 +12,6 @@ namespace MyDataWithEF6.Entities
         public string City { get; set; }   //scalar property
         public string State { get; set; }  //scalar property
         public string ZipCode { get; set; }  //scalar property
-        public ICollection<Student> Students { get; set; }  //collection navigation property (multiplicity of many) --> this will create Address_AddressId foreign key in Students table even if "public virtual Address Address { get; set; }" does not exist in Student table
+      //  public ICollection<Student> Students { get; set; }  //collection navigation property (multiplicity of many) --> this will create Address_AddressId foreign key in Students table even if "public virtual Address Address { get; set; }" does not exist in Student table
     }
 }
