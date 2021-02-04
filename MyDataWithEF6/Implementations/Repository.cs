@@ -9,12 +9,12 @@ namespace MyDataWithEF6.Implementations
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private SchoolContext _context;
+        private SchoolDbContext _dbContext;
         private DbSet<TEntity> _dbSet;
 
-        internal Repository(SchoolContext context)
+        internal Repository(SchoolDbContext context)
         {
-            _context = context;
+            _dbContext = context;
             _dbSet = context.Set<TEntity>();
         }
         
@@ -61,13 +61,13 @@ namespace MyDataWithEF6.Implementations
         public void Update(TEntity entity)
         {
             _dbSet.Attach(entity);
-            _context.Entry(entity).State = EntityState.Modified;
+            _dbContext.Entry(entity).State = EntityState.Modified;
         }
 
         public void Delete(int id)
         {
             var entityToDelete = _dbSet.Find(id);
-            if (entityToDelete != null && _context.Entry(entityToDelete).State == EntityState.Detached)
+            if (entityToDelete != null && _dbContext.Entry(entityToDelete).State == EntityState.Detached)
             {
                 _dbSet.Attach(entityToDelete);
             }

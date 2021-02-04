@@ -6,10 +6,10 @@ namespace MyDataWithEF6.Implementations
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
-        private SchoolContext context;
+        private SchoolDbContext _dbContext;
         public UnitOfWork(string connectionString)
         {
-            context = new SchoolContextFactory(connectionString).Create();
+            _dbContext = new SchoolContextFactory(connectionString).Create();
         }
 
         private Repository<Student> studentRepository;
@@ -21,7 +21,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                studentRepository = new Repository<Student>(context);
+                studentRepository = new Repository<Student>(_dbContext);
                 return studentRepository;
             }
         }
@@ -30,7 +30,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                courseRepository = new Repository<Course>(context);
+                courseRepository = new Repository<Course>(_dbContext);
                 return courseRepository;
             }
         }
@@ -38,7 +38,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                subjectRepository = new Repository<Subject>(context);
+                subjectRepository = new Repository<Subject>(_dbContext);
                 return subjectRepository;
             }
         }
@@ -46,14 +46,14 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                addressRepository = new Repository<Address>(context);
+                addressRepository = new Repository<Address>(_dbContext);
                 return addressRepository;
             }
         }
 
         public void Save()
         {
-            context.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         private bool disposed = false;
@@ -64,7 +64,7 @@ namespace MyDataWithEF6.Implementations
             {
                 if (disposing)
                 {
-                    context.Dispose();
+                    _dbContext.Dispose();
                 }
             }
             disposed = true;

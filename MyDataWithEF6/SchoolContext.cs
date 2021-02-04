@@ -8,11 +8,14 @@ using System.Data.Entity.Infrastructure;
 
 namespace MyDataWithEF6
 {
-    public class SchoolContext : DbContext
+    public class SchoolDbContext : DbContext
     {
         //An instance of the context class represents "Unit of Work" and Repository Pattern wherein it can combine multiple changes under a single database transaction.
-        internal SchoolContext(string connectionString) : base(connectionString)
+        internal SchoolDbContext(string connectionString) : base(connectionString)
         {
+            // Database.SetInitializer<SchoolContext>(new CreateDatabaseIfNotExists<SchoolDbContext>()); //default if not mentioned here
+            //  Database.SetInitializer<SchoolContext>(new DropCreateDatabaseAlways<SchoolDbContext>()); //every run drops and creates a database
+            //  Database.SetInitializer<SchoolContext>(new DropCreateDatabaseIfModelChanges<SchoolDbContext>()); //every run drops and creates a database only if a model has changed
 
         }
 
@@ -22,7 +25,7 @@ namespace MyDataWithEF6
         public DbSet<Subject> Subjects { get; set; }
     }
 
-    public class SchoolContextFactory : IDbContextFactory<SchoolContext>
+    public class SchoolContextFactory : IDbContextFactory<SchoolDbContext>
     {
         /* This library is built using .net framework.
            Add a reference to System.Configuration to use ConfigurationManager to access configuration string from web.config or app.config.
@@ -55,9 +58,9 @@ namespace MyDataWithEF6
             _connectionString = connectionString;
         }
 
-        public SchoolContext Create()
+        public SchoolDbContext Create()
         {
-            return new SchoolContext(_connectionString);
+            return new SchoolDbContext(_connectionString);
         }
     }
 }
