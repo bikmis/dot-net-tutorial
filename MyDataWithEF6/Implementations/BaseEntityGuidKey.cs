@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace MyDataWithEF6.Implementations
 {
-    public class BaseEntityIntKey : BaseEntity, IBaseEntity<int>
+    public class BaseEntityGuidKey : BaseEntity, IBaseEntity<Guid>
     {
-        [Key] 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public Guid Id { get; set; }
     }
 }
