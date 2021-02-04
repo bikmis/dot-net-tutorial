@@ -8,7 +8,6 @@ namespace MyDataWithEF6.Entities
 {
     public class BaseEntity
     {
-        public int Id { get; set; }
         public DateTime CreatedDatetime { get; set; }
         public string CreatedBy { get; set; }
         public DateTime? UpdatedDatetime { get; set; }

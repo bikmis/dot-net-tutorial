@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MyDataWithEF6.Entities
 {
-    public class Address : BaseEntity
+    public class Address : BaseEntityInt
     {
        // public int Id { get; set; }   //scalar property
         public string HouseNumber { get; set; }  //scalar property
