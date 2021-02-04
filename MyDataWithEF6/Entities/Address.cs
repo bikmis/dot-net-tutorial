@@ -4,9 +4,9 @@ using System.Text;
 
 namespace MyDataWithEF6.Entities
 {
-    public class Address
+    public class Address : BaseEntity
     {
-        public int Id { get; set; }   //scalar property
+       // public int Id { get; set; }   //scalar property
         public string HouseNumber { get; set; }  //scalar property
         public string Street { get; set; }  //scalar property
         public string City { get; set; }   //scalar property
