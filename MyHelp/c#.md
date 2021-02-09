@@ -46,4 +46,7 @@ C#
 	modifying the original type.
 
 - lambda, ananymous method and delegate
-	
+
+- What is a difference between readonly and constant?
+  - readonly can be assigned to a value at the time of declaration or in the constructor
+  - constant is assigned to a value at the time of declaration.
