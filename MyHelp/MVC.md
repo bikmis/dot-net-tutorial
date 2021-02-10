@@ -63,3 +63,7 @@ MVC
 - @model... 
 
 - @using.... 
+
+- view model for dropdown list (type: SelectList, SelectListItem), radio button, input, display
+
+- 
