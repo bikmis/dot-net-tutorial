@@ -53,6 +53,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyHelp", "MyHelp", "{F85506
 		MyHelp\Design Principle.md = MyHelp\Design Principle.md
 		MyHelp\IIS.md = MyHelp\IIS.md
 		MyHelp\JavaScript.md = MyHelp\JavaScript.md
+		MyHelp\Linq.md = MyHelp\Linq.md
 		MyHelp\MongoDB.md = MyHelp\MongoDB.md
 		MyHelp\MVC.md = MyHelp\MVC.md
 		MyHelp\Packages in VS.md = MyHelp\Packages in VS.md
