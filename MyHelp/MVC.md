@@ -66,4 +66,4 @@ MVC
 
 - view model for dropdown list (type: SelectList, SelectListItem), radio button, input, display
 
-- 
+- ModelState (IsValid, Clear())
