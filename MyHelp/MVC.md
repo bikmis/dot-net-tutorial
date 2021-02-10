@@ -29,4 +29,37 @@ MVC
 	- asp-all-route-data
 	- asp-fragment
 	- asp-page
-	- 
+	
+- @inject directive
+	- ASP.NET Core supports dependency injection into views. appsettings.json values can be directly injected into a view.
+	appsettings.json contains the following:
+	{
+		"root": {
+			"parent": {
+				"child": "myvalue"
+			}
+		}
+	}
+
+	In cshtml
+	@using Microsoft.Extensions.Configuration
+	@inject IConfiguration Configuration
+
+	@{
+	   string myValue = Configuration["root:parent:child"];
+	   ...
+	}
+
+	We can inject services aslo into a view.
+	public void ConfigureServices(IServiceCollection services)
+	{
+	    services.AddTransient<StatisticsService>();
+	}
+
+	in cshtml
+	@inject StatisticsService StatsService
+	<p>@StatsService.GetAverageAge</p>
+
+- @model... 
+
+- @using.... 
