@@ -66,4 +66,5 @@ MVC
 
 - view model for dropdown list (type: SelectList, SelectListItem), radio button, input, display
 
-- ModelState (IsValid, Clear())
+- ModelState (IsValid, Clear(), AddModelError("", "Enter more than 5"))
+
