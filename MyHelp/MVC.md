@@ -69,13 +69,20 @@ MVC
 - ModelState (IsValid, Clear(), AddModelError("", "Enter more than 5"))
 
 - _Layout.cshtml: you may have to inject services or use libraries:
-	@using Microsoft.AspNetCore.Identity
+	@using Microsoft.AspNetCore.Identity   //library dependency
 	@using MyEfCore.Data
-	@inject SignInManager<Employer> SignInManager
+	@inject SignInManager<Employer> SignInManager   //service dependency
 	@inject UserManager<Employee> UserManager
 	<!DOCTYPE html>
 	<html lang="en">
 	....
 
+- Dynamic title: in the _Layout.cshtml put the following:
+	<head> ViewData["Title"] </head>
+  
+	on the list of employee page, put the following code: 
+	@{  
+	    ViewData["Title"] = "List of Employees" 
+	}
 
 
