@@ -53,3 +53,9 @@ C#
   - readonly variable needs the keyword "readonly", and constants use "const" keyword
   - The value of readonly field can be changed, but the value of const field cannot be changed.
   - readonly variables can be used with static methods, constants cannot be used with static methods.
+
+- async, await, Task (like void), Task<someDataType>
+  .ToListAsync() is available in Microsoft.EntityFrameworkCore
+
+
+
