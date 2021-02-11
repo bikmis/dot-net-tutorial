@@ -93,7 +93,7 @@ MVC
 		</script>
 	}
 
-	@section scripts {
+	@section Scripts {
 		<partial name="Shared/_ProductPartial.cshtml" for="Product"/>
 	}
 
