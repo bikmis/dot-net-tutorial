@@ -50,3 +50,6 @@ C#
 - What is a difference between readonly and constant?
   - readonly can be assigned to a value at the time of declaration or in the constructor
   - constant is assigned to a value at the time of declaration.
+  - readonly variable needs the keyword "readonly", and constants use "const" keyword
+  - The value of readonly field can be changed, but the value of const field cannot be changed.
+  - readonly variables can be used with static methods, constants cannot be used with static methods.
