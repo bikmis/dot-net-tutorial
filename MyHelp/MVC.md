@@ -68,3 +68,14 @@ MVC
 
 - ModelState (IsValid, Clear(), AddModelError("", "Enter more than 5"))
 
+- _Layout.cshtml: you may have to inject services or use libraries:
+	@using Microsoft.AspNetCore.Identity
+	@using MyEfCore.Data
+	@inject SignInManager<Employer> SignInManager
+	@inject UserManager<Employee> UserManager
+	<!DOCTYPE html>
+	<html lang="en">
+	....
+
+
+
