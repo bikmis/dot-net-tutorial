@@ -85,4 +85,14 @@ MVC
 	    ViewData["Title"] = "List of Employees" 
 	}
 
+- @RenderBody() --- here goes the child pages
+- @RenderSection("Scripts", require: false) --- here goes scripts from child pages. The scripts in child pages should be as follows:
+    @section Scripts {
+		<script> 
+			...
+		</script>
+	}
+
+- @RenderPage: You write the following code in the _layout.cshtml page and create _StaticPromotionalPage.cshtml
+	@RenderPage("~/Views/Shared/_StaticPromotionalPage.cshtml")
 
