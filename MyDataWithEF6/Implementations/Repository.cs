@@ -20,26 +20,26 @@ namespace MyDataWithEF6.Implementations
         
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
         {
-            IQueryable<TEntity> query = _dbSet;
+            IQueryable<TEntity> debSet = _dbSet;
 
             if (filter != null)
             {
-                query = query.Where(filter);
+                debSet = debSet.Where(filter);
             }
 
             foreach (var includeProperty in includeProperties.Split
                 (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
-                query = query.Include(includeProperty);
+                debSet = debSet.Include(includeProperty);
             }
 
             if (orderBy != null)
             {
-                return orderBy(query).ToList();
+                return orderBy(debSet).ToList();
             }
             else
             {
-                return query.ToList();
+                return debSet.ToList();
             }
         }
         
