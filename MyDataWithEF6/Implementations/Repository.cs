@@ -20,6 +20,8 @@ namespace MyDataWithEF6.Implementations
         
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
         {
+            //Expression<Func<TEntity, bool>> filter = null --> this is an expression tree, where TEntity is a parameter and bool is a return value.
+
             IQueryable<TEntity> debSet = _dbSet;
 
             if (filter != null)
