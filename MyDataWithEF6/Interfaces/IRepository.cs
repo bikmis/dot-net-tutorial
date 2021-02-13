@@ -8,10 +8,10 @@ namespace MyDataWithEF6.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : class
     {
-        IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "");
+        IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, List<string> includes = null);
         TEntity GetById(int id);
         // TEntity Get(Expression<Func<TEntity, bool>> expression = null, List<string> includes = null);
-        // bool IsExists(Expression<Func<TEntity, bool>> expression)
+        bool IsExists(Expression<Func<TEntity, bool>> expression);
         IEnumerable<TEntity> GetAll();
         void Insert(TEntity entity);
         void Update(TEntity entity);

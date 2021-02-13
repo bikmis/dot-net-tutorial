@@ -18,7 +18,7 @@ namespace MyDataWithEF6.Implementations
             _dbSet = context.Set<TEntity>();
         }
         
-        public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
+        public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, List<string> includes = null)
         {
             // The above paramenter can be replaced with (... List<string> includes = null). string includeProperties = "" is replaced.
             // Include in linq is used to include related columns. This is eager loading. 
@@ -43,26 +43,32 @@ namespace MyDataWithEF6.Implementations
 
             // Expression<Func<TEntity, bool>> filter = null --> this is an expression tree, where TEntity is a parameter and bool is a return value.
 
-            IQueryable<TEntity> dbSet = _dbSet;
+            IQueryable<TEntity> query = _dbSet;
 
             if (filter != null)
             {
-                dbSet = dbSet.Where(filter);
+                query = query.Where(filter);
             }
 
-            foreach (var includeProperty in includeProperties.Split
+            if (includes != null) {
+                includes.ForEach(relatedEntity => query.Include(relatedEntity));
+            }
+
+          /*
+            foreach (var relatedEntity in includeProperties.Split
                 (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
-                dbSet = dbSet.Include(includeProperty);
+                query = query.Include(relatedEntity);
             }
+          */
 
             if (orderBy != null)
             {
-                return orderBy(dbSet).ToList();
+                return orderBy(query).ToList();
             }
             else
             {
-                return dbSet.ToList();
+                return query.ToList();
             }
         }
         
@@ -70,7 +76,13 @@ namespace MyDataWithEF6.Implementations
         {
             return _dbSet.Find(id);
         }
-        
+
+        //Call the following IsExists(q=> q.id == 20)
+        public bool IsExists(Expression<Func<TEntity, bool>> expression = null) {
+            IQueryable<TEntity> query = _dbSet;
+            return query.Any(expression);
+        }
+
         public IEnumerable<TEntity> GetAll()
         {
             return _dbSet.ToList();
