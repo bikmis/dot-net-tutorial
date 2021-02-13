@@ -21,7 +21,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                studentRepository = new Repository<Student>(_dbContext);
+                studentRepository = studentRepository == null ? new Repository<Student>(_dbContext) : studentRepository;
                 return studentRepository;
             }
         }
@@ -30,7 +30,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                courseRepository = new Repository<Course>(_dbContext);
+                courseRepository = courseRepository == null ? new Repository<Course>(_dbContext) : courseRepository;
                 return courseRepository;
             }
         }
@@ -38,7 +38,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                subjectRepository = new Repository<Subject>(_dbContext);
+                subjectRepository = subjectRepository == null ? new Repository<Subject>(_dbContext) : subjectRepository;
                 return subjectRepository;
             }
         }
@@ -46,7 +46,7 @@ namespace MyDataWithEF6.Implementations
         {
             get
             {
-                addressRepository = new Repository<Address>(_dbContext);
+                addressRepository = addressRepository == null ? new Repository<Address>(_dbContext) : addressRepository;
                 return addressRepository;
             }
         }
