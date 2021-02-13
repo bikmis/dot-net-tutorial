@@ -17,7 +17,7 @@ namespace MyDataWithEF6.Implementations
             _dbContext = context;
             _dbSet = context.Set<TEntity>();
         }
-        
+        // Get(filter: q=> q.id==20, orderBy: q => q.OrderBy(q => q.name)
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, List<string> includes = null)
         {
             // The above paramenter can be replaced with (... List<string> includes = null). string includeProperties = "" is replaced.

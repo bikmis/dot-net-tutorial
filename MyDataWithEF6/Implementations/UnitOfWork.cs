@@ -4,7 +4,7 @@ using System;
 
 namespace MyDataWithEF6.Implementations
 {
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         private SchoolDbContext _dbContext;
         public UnitOfWork(string connectionString)
