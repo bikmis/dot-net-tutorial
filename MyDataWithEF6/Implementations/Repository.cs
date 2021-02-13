@@ -43,26 +43,26 @@ namespace MyDataWithEF6.Implementations
 
             // Expression<Func<TEntity, bool>> filter = null --> this is an expression tree, where TEntity is a parameter and bool is a return value.
 
-            IQueryable<TEntity> debSet = _dbSet;
+            IQueryable<TEntity> dbSet = _dbSet;
 
             if (filter != null)
             {
-                debSet = debSet.Where(filter);
+                dbSet = dbSet.Where(filter);
             }
 
             foreach (var includeProperty in includeProperties.Split
                 (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
-                debSet = debSet.Include(includeProperty);
+                dbSet = dbSet.Include(includeProperty);
             }
 
             if (orderBy != null)
             {
-                return orderBy(debSet).ToList();
+                return orderBy(dbSet).ToList();
             }
             else
             {
-                return debSet.ToList();
+                return dbSet.ToList();
             }
         }
         
