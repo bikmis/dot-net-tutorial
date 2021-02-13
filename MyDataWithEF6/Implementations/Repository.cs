@@ -20,7 +20,28 @@ namespace MyDataWithEF6.Implementations
         
         public IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string includeProperties = "")
         {
-            //Expression<Func<TEntity, bool>> filter = null --> this is an expression tree, where TEntity is a parameter and bool is a return value.
+            // The above paramenter can be replaced with (... List<string> includes = null). string includeProperties = "" is replaced.
+            // Include in linq is used to include related columns. This is eager loading. 
+            // var customersWithOrderDetail = context.Customers.Include("Orders").ToList(); is the same as 
+            // SELECT * FROM Customers JOIN Orders ON Customers.Id = Orders.CustomerId;
+            //     var stud1 = ctx.Students
+            //                    .Include("Standard")
+            //                    .Where(s => s.StudentName == "Bill")
+            //                    .FirstOrDefault<Student>();
+            // or
+            //     var stud1 = ctx.Students.Include(s => s.Standard)
+            //                             .Where(s => s.StudentName == "Bill")
+            //                             .FirstOrDefault<Student>();
+            // The following example query example load the Student, Standard and Teacher entities
+            //     var stud1 = ctx.Students.Include("Standard.Teachers")
+            //                             .Where(s => s.StudentName == "Bill")
+            //                             .FirstOrDefault<Student>();
+            // or
+            //     var stud1 = ctx.Students.Include(s => s.Standard.Teachers)
+            //                             .Where(s => s.StudentName == "Bill")
+            //                             .FirstOrDefault<Student>();
+
+            // Expression<Func<TEntity, bool>> filter = null --> this is an expression tree, where TEntity is a parameter and bool is a return value.
 
             IQueryable<TEntity> debSet = _dbSet;
 
