@@ -7,4 +7,4 @@ Windows Communication Foundation (WCF)
 - [FaultContract] is used to propagate errors to its clients.
 - [MessageContract], [MessageHeader], [MessageBodyMember]
 - Endpoints provide the configuration for the communication. It has Address(service loacation - URI), Binding(protocol), Contract(what message is exposed)
-
+- ...
