@@ -44,7 +44,7 @@ namespace MyTestProject.Steps
         public void ThenTheResultShouldBe(int result)
         {
             int? sum = _scenarioContext["sum"] as int?;
-            Assert.AreEqual(sum, 120);
+            Assert.AreEqual(sum, result);
             /*
             _testContext.WriteLine("Title: {0}", _scenarioContext.ScenarioInfo.Title);
             _scenarioContext.ScenarioInfo.Tags.ToList().ForEach(tag => _testContext.WriteLine("Tag: {0}", tag));
