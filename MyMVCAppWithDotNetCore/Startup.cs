@@ -29,6 +29,7 @@ namespace MyCoreApp
             services.AddScoped<IScopedGuidNumber, GuidNumber>();
             services.AddTransient<ITransientGuidNumber, GuidNumber>();
             services.AddTransient<GuidService, GuidService>();
+           // services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,8 +56,13 @@ namespace MyCoreApp
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}"); //If you don't mention controller and action, they default to Home and Index. Id is optional as it has a question mark.
             });
+
+            // Use the followoing MVC routing when you set options.EnableEndpointRouting to false in ConfigureServices method
+            // app.UseMvcWithDefaultRoute();
+            // or
+            // app.UseMvc(routes => {routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");});  //id? - ? makes id optional
         }
     }
 }
